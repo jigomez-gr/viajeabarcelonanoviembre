@@ -429,8 +429,9 @@ export default async function Home() {
             <h2 className="font-serif text-3xl sm:text-5xl font-bold text-[#800020]">
               Viajes ya Realizados
             </h2>
-            <p className="text-sm text-[#1C1C1C]/60 mt-3 max-w-xl mx-auto">
+            <p className="text-sm text-[#1C1C1C]/60 mt-3 max-w-2xl mx-auto whitespace-pre-line">
               Reviva la atmósfera de nuestras expediciones pasadas a través de los vídeos de recuerdo de cada viaje.
+              Cada vez que hacemos un viaje se monta un vídeo como recuerdo. Éstos son un viaje que se hizo a Barcelona en enero de 2026 y el otro es Sevilla del año 2025.
             </p>
           </div>
 

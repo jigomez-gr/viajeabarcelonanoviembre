@@ -1,7 +1,7 @@
 import pypdf
 
 def extract_pdf():
-    reader = pypdf.PdfReader("pdf_viaje/Viaje a Sevilla, septiembre 2026.pdf")
+    reader = pypdf.PdfReader("pdf_viaje/Viaje a Barcelona, noviembre 2026.pdf")
     text = ""
     for i, page in enumerate(reader.pages):
         text += f"--- PAGE {i+1} ---\n"

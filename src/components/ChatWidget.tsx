@@ -72,7 +72,7 @@ export default function ChatWidget() {
                         <div className="bg-white p-3.5 rounded-xl border border-stone-200 shadow-sm text-xs text-[#1C1C1C]/95 leading-relaxed">
                             <p className="font-serif italic font-bold text-[#800020] mb-1">¡Buenas tardes!</p>
                             <p className="mb-2">
-                                Le damos la bienvenida al portal del viaje exclusivo <strong>Sevilla, Ciudad de la Música</strong>.
+                                Le damos la bienvenida al portal del viaje exclusivo <strong>Barcelona Modernista</strong>.
                             </p>
                             <p className="text-stone-600">
                                 Para facilitarle asistencia directa o responder cualquier duda, puede solicitar continuar esta conversación en nuestros canales personales de:
@@ -84,7 +84,7 @@ export default function ChatWidget() {
                     <div className="p-4 pt-1 bg-white border-t border-stone-100 flex flex-col gap-2">
                         {/* WhatsApp Button */}
                         <a
-                            href="https://wa.me/34600000000?text=Hola,%20solicito%20información%20sobre%20el%20viaje%20a%20Sevilla%20del%20Ciclo%20Manuel%20de%20Falla."
+                            href="https://wa.me/34660957863?text=Hola,%20solicito%20información%20sobre%20el%20viaje%20a%20Barcelona%20del%20Ciclo%20Manuel%20de%20Falla."
                             target="_blank"
                             rel="noopener noreferrer"
                             className="w-full flex items-center justify-center gap-2 py-2 px-3 bg-[#25D366] hover:bg-[#20ba5a] text-white text-[11px] font-bold uppercase tracking-wider rounded-lg transition-all duration-150 active:scale-98 shadow-sm cursor-pointer"
@@ -112,7 +112,7 @@ export default function ChatWidget() {
 
                         {/* Email Button */}
                         <a
-                            href="mailto:viajes@ccmfalla.com?subject=Consulta%20Viaje%20Sevilla:%20Ciudad%20de%20la%20M%C3%BAsica"
+                            href="mailto:jose_manuel_hdezblanco@hotmail.com?subject=Consulta%20Viaje%20Barcelona:%20Modernista"
                             className="w-full flex items-center justify-center gap-2 py-2 px-3 bg-[#FAF8F5] hover:bg-[#800020]/5 text-[#800020] text-[11px] font-bold uppercase tracking-wider rounded-lg border border-[#C5A059]/40 transition-all duration-150 active:scale-98 shadow-sm cursor-pointer"
                         >
                             <Mail className="w-4 h-4" />

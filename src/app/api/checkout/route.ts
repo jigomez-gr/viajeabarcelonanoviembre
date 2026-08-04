@@ -63,8 +63,8 @@ export async function POST(request: Request) {
             }
 
             // Price calculation
-            const precioBase = 1630;
-            const suplementoIndividual = 260;
+            const precioBase = 2770;
+            const suplementoIndividual = 515;
             const precioConSuplemento = precioBase + suplementoIndividual;
             const unitPrice = tipoHabitacion === "individual" ? precioConSuplemento : precioBase;
             const totalAmount = plazasCount * unitPrice;

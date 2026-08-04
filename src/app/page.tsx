@@ -204,13 +204,13 @@ export default async function Home() {
               </h2>
               <div className="space-y-4 text-sm sm:text-base text-[#1C1C1C]/75 leading-relaxed">
                 <p>
-                  A principios del siglo XX, Barcelona se consolidó como uno de los centros artísticos más vanguardistas de Europa, combinando el desarrollo modernista con una inigualable ebullición musical.
+                  A finales del s. XIX y con una duración aproximada de 30 años, aparece en Cataluña un movimiento con afán de regeneración cultural centrado principalmente en la arquitectura, aunque no sólo en ella. La Exposición Universal de Barcelona que tuvo lugar en 1888, impulsó este movimiento al servir como laboratorio de pruebas para todo lo que vendría después. Dicha exposición, a la cual pertenecen el Monumento a Colón o el Arco del Triunfo, dio lugar a una expresión propia de la actividad artística. Es el Modernismo Catalán.
                 </p>
                 <p>
-                  Celebrado en el Sant Pau Recinto Modernista de los Reales Alcázares de Sevilla, este enlace no solo estrechaba lazos de sangre con dispensa papal, sino que conllevaba un importante trasfondo político y económico.
+                  Antoni Gaudí, Josep Puig i Cadafalch o Lluís Domènech i Montaner, arquitectos; Josep Llimona, Miquel Blay o Enric Clarasó, escultores; o Ramon Casas, Santiago Rusiñol, e incluso el mismo Pablo Picasso, pintores, forman parte de esta corriente que tuvo como uno de sus puntos de encuentro más emblemáticos el café Els Quatre Gats. Un grupo social privilegiado construyó su nuevo edificio en el Eixample como un signo de distinción.
                 </p>
                 <p>
-                  Nuestro itinerario recorre estas joyas del modernismo, enlazando visitas monumentales exclusivas con recitales íntimos que devuelven a la vida estas espectaculares composiciones.
+                  Más entrado ya el s. XX, a nivel musical, Manuel de Falla tuvo una estrecha relación con Barcelona. Una vez finalizada su etapa andaluza, muchas de sus últimas obras se estrenaron aquí: Psyché (Palau de la Música Catalana, 1925), Concerto para clave y cinco instrumentos (Asociación de Música de Cámara -Palau de la Música Catalana-, 1926) o su obra póstuma Atlántida (Gran Teatre del Liceu, 1961, versión de concierto).
                 </p>
               </div>
             </div>
@@ -219,7 +219,7 @@ export default async function Home() {
             <div className="relative rounded-2xl overflow-hidden shadow-2xl group border border-[#C5A059]/30">
               <img
                 src="https://images.unsplash.com/photo-1620843245451-b0db36605e55?q=80&w=800&auto=format&fit=crop"
-                alt="Sant Pau Recinto Modernista en el Real Alcázar de Sevilla"
+                alt="Sant Pau Recinto Modernista en Barcelona"
                 className="w-full h-[400px] object-cover group-hover:scale-105 transition duration-700"
               />
               {/* Dark red gradient cover at the bottom */}
@@ -282,9 +282,9 @@ export default async function Home() {
               <div className="w-12 h-12 bg-[#800020]/10 flex items-center justify-center rounded-full text-[#800020] mx-auto mb-4">
                 <Compass className="w-6 h-6" />
               </div>
-              <h4 className="font-serif text-lg font-bold text-[#800020] mb-2">La Sevilla del XVI</h4>
+              <h4 className="font-serif text-lg font-bold text-[#800020] mb-2">La Barcelona Modernista</h4>
               <p className="text-xs sm:text-sm text-[#1C1C1C]/70 leading-relaxed">
-                Descubra la herencia comercial del Archivo de Indias, la azulejería de Triana o el encanto de la Casa de Salinas.
+                Descubra la arquitectura onírica del Park Güell, la Sagrada Familia o el Palau de la Música Catalana de Domènech i Montaner.
               </p>
             </div>
 
@@ -295,7 +295,7 @@ export default async function Home() {
               </div>
               <h4 className="font-serif text-lg font-bold text-[#800020] mb-2">Espacios Singulares</h4>
               <p className="text-xs sm:text-sm text-[#1C1C1C]/70 leading-relaxed">
-                Música en directo en el minúsculo CasaLa Teatro de 28 butacas y recital lírico nocturno bajo las estrellas en los Reales Alcázares.
+                Conciertos en el icónico Palau de la Música Catalana, el acogedor Petit Palau y la gran sala sinfónica de L'Auditori de Barcelona.
               </p>
             </div>
 
@@ -306,7 +306,7 @@ export default async function Home() {
               </div>
               <h4 className="font-serif text-lg font-bold text-[#800020] mb-2">Gourmet Seleccionado</h4>
               <p className="text-xs sm:text-sm text-[#1C1C1C]/70 leading-relaxed">
-                Platos de autor andaluces en Montalván, un taller alfarero del s. XVIII, visitas guiadas modernistas y almuerzo de gala de clausura.
+                Almuerzos en espacios artísticos y gastronómicos como El Cercle, Lincoln 32, el Palace Barcelona y una comida marinera en Cadaqués.
               </p>
             </div>
 
@@ -342,7 +342,7 @@ export default async function Home() {
               <img src="https://images.unsplash.com/photo-1583422409516-2895a77efedd?q=80&w=800&auto=format&fit=crop" alt="Día 1" className="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent group-hover:from-[#800020]/85 group-hover:via-[#800020]/25 group-hover:to-transparent transition duration-350 flex flex-col justify-end p-5 text-white">
                 <span className="text-[10px] font-bold tracking-[0.2em] text-[#E9C168] uppercase mb-1">Día 1</span>
-                <h4 className="font-serif text-base sm:text-lg font-bold text-white tracking-wide leading-snug">Origen y Llegada a Sevilla</h4>
+                <h4 className="font-serif text-base sm:text-lg font-bold text-white tracking-wide leading-snug">Llegada y Ópera en el Liceu</h4>
                 <p className="text-[10px] sm:text-xs italic text-stone-200 mt-1 font-serif">Ver itinerario del trayecto &rarr;</p>
               </div>
             </a>
@@ -352,8 +352,8 @@ export default async function Home() {
               <img src="https://images.unsplash.com/photo-1620843245451-b0db36605e55?q=80&w=800&auto=format&fit=crop" alt="Día 2" className="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent group-hover:from-[#800020]/85 group-hover:via-[#800020]/25 group-hover:to-transparent transition duration-350 flex flex-col justify-end p-5 text-white">
                 <span className="text-[10px] font-bold tracking-[0.2em] text-[#E9C168] uppercase mb-1">Día 2</span>
-                <h4 className="font-serif text-base sm:text-lg font-bold text-white tracking-wide leading-snug">Triana y Tradición del XVI</h4>
-                <p className="text-[10px] sm:text-xs italic text-stone-200 mt-1 font-serif">Ver recital y alfarería &rarr;</p>
+                <h4 className="font-serif text-base sm:text-lg font-bold text-white tracking-wide leading-snug">Domènech i Montaner y Quartet Gerhard</h4>
+                <p className="text-[10px] sm:text-xs italic text-stone-200 mt-1 font-serif">Ver recital y modernismo &rarr;</p>
               </div>
             </a>
 
@@ -362,8 +362,8 @@ export default async function Home() {
               <img src="https://images.unsplash.com/photo-1549887534-1541e9326642?q=80&w=800&auto=format&fit=crop" alt="Día 3" className="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent group-hover:from-[#800020]/85 group-hover:via-[#800020]/25 group-hover:to-transparent transition duration-350 flex flex-col justify-end p-5 text-white">
                 <span className="text-[10px] font-bold tracking-[0.2em] text-[#E9C168] uppercase mb-1">Día 3</span>
-                <h4 className="font-serif text-base sm:text-lg font-bold text-white tracking-wide leading-snug">Reales Alcázares y Wagner</h4>
-                <p className="text-[10px] sm:text-xs italic text-stone-200 mt-1 font-serif">Ver concierto privado &rarr;</p>
+                <h4 className="font-serif text-base sm:text-lg font-bold text-white tracking-wide leading-snug">Gaudí, Amatller y Réquiem de Verdi</h4>
+                <p className="text-[10px] sm:text-xs italic text-stone-200 mt-1 font-serif">Ver Casas Modernistas y Réquiem &rarr;</p>
               </div>
             </a>
 
@@ -372,8 +372,8 @@ export default async function Home() {
               <img src="https://images.unsplash.com/photo-1511527661048-7fe73d85e9a4?q=80&w=800&auto=format&fit=crop" alt="Día 4" className="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent group-hover:from-[#800020]/85 group-hover:via-[#800020]/25 group-hover:to-transparent transition duration-350 flex flex-col justify-end p-5 text-white">
                 <span className="text-[10px] font-bold tracking-[0.2em] text-[#E9C168] uppercase mb-1">Día 4</span>
-                <h4 className="font-serif text-base sm:text-lg font-bold text-white tracking-wide leading-snug">Barroco y Siglo de Oro</h4>
-                <p className="text-[10px] sm:text-xs italic text-stone-200 mt-1 font-serif">Ver Bellas Artes y Salvador &rarr;</p>
+                <h4 className="font-serif text-base sm:text-lg font-bold text-white tracking-wide leading-snug">Park Güell, Sagrada Familia y Falla</h4>
+                <p className="text-[10px] sm:text-xs italic text-stone-200 mt-1 font-serif">Ver templos acústicos &rarr;</p>
               </div>
             </a>
 
@@ -382,8 +382,8 @@ export default async function Home() {
               <img src="https://images.unsplash.com/photo-1604999333679-b86d54738315?q=80&w=800&auto=format&fit=crop" alt="Día 5" className="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent group-hover:from-[#800020]/85 group-hover:via-[#800020]/25 group-hover:to-transparent transition duration-350 flex flex-col justify-end p-5 text-white">
                 <span className="text-[10px] font-bold tracking-[0.2em] text-[#E9C168] uppercase mb-1">Día 5</span>
-                <h4 className="font-serif text-base sm:text-lg font-bold text-white tracking-wide leading-snug">Catedral, Giralda y Salinas</h4>
-                <p className="text-[10px] sm:text-xs italic text-stone-200 mt-1 font-serif">Ver visita monumental &rarr;</p>
+                <h4 className="font-serif text-base sm:text-lg font-bold text-white tracking-wide leading-snug">Museo de la Música y Atlántida</h4>
+                <p className="text-[10px] sm:text-xs italic text-stone-200 mt-1 font-serif">Ver exposición de música &rarr;</p>
               </div>
             </a>
 
@@ -392,8 +392,8 @@ export default async function Home() {
               <img src="https://images.unsplash.com/photo-1587334206574-35113a8d75e9?q=80&w=800&auto=format&fit=crop" alt="Día 6" className="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent group-hover:from-[#800020]/85 group-hover:via-[#800020]/25 group-hover:to-transparent transition duration-350 flex flex-col justify-end p-5 text-white">
                 <span className="text-[10px] font-bold tracking-[0.2em] text-[#E9C168] uppercase mb-1">Día 6</span>
-                <h4 className="font-serif text-base sm:text-lg font-bold text-white tracking-wide leading-snug">Archivo de Indias y Clausura</h4>
-                <p className="text-[10px] sm:text-xs italic text-stone-200 mt-1 font-serif">Ver despedida y cena &rarr;</p>
+                <h4 className="font-serif text-base sm:text-lg font-bold text-white tracking-wide leading-snug">Pablo Picasso Joven y Despedida</h4>
+                <p className="text-[10px] sm:text-xs italic text-stone-200 mt-1 font-serif">Ver almuerzo y Born &rarr;</p>
               </div>
             </a>
           </div>
@@ -432,15 +432,15 @@ export default async function Home() {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 py-8 border-y border-stone-100 mb-8 font-sans">
             <div>
               <span className="block text-xs uppercase tracking-wider text-stone-500 mb-1">Precio por Persona</span>
-              <span className="font-serif text-4xl sm:text-5xl font-black text-[#800020]">1.630 €</span>
+              <span className="font-serif text-4xl sm:text-5xl font-black text-[#800020]">2.770 €</span>
               <span className="block text-xs text-stone-400 mt-1">IVA incluido (en habitación doble estándar)</span>
-              <span className="block text-[11px] text-stone-400 font-mono">(Base de 1.347 € + 21% IVA)</span>
+              <span className="block text-[11px] text-stone-400 font-mono">(Base de 2.290 € + 21% IVA)</span>
             </div>
 
             <div className="border-t sm:border-t-0 sm:border-l border-stone-150 pt-6 sm:pt-0 sm:pl-8">
               <span className="block text-xs uppercase tracking-wider text-stone-500 mb-1">Suplemento Habitación Individual</span>
-              <span className="font-serif text-4xl sm:text-5xl font-black text-[#C5A059]">+260 €</span>
-              <span className="block text-xs text-stone-400 mt-1">Sujeto a disponibilidad del Hotel Petit Palace 4*</span>
+              <span className="font-serif text-4xl sm:text-5xl font-black text-[#C5A059]">+515 €</span>
+              <span className="block text-xs text-stone-400 mt-1">Sujeto a disponibilidad del Hotel Petit Palace Boquería Garden 4*</span>
             </div>
           </div>
 
@@ -454,8 +454,8 @@ export default async function Home() {
               <span className="font-bold text-[#800020]">14 personas</span>
             </div>
             <div className="flex justify-between items-center sm:px-12">
-              <span className="font-semibold text-left">Fecha límite de inscripción y pago:</span>
-              <span className="font-bold text-[#800020] uppercase">Viernes, 24 de julio de 2026</span>
+              <span className="font-semibold text-left">Fecha límite de inscripción:</span>
+              <span className="font-bold text-[#800020] uppercase">Miércoles, 2 de septiembre de 2026</span>
             </div>
           </div>
 
@@ -490,39 +490,39 @@ export default async function Home() {
               <ul className="space-y-4 text-xs sm:text-sm text-[#1C1C1C]/80">
                 <li className="flex items-start">
                   <CheckCircle2 className="w-5 h-5 text-[#2E5A44] shrink-0 mr-3 mt-0.5" />
-                  <span>Billete tren IRYO Madrid-Barcelona-Madrid en <strong>Clase Infinita</strong> (alta velocidad).</span>
+                  <span>Tren IRYO Madrid-Barcelona-Madrid, plazas clase Infinita Bistró (pequeño menú incluido). Traslados al hotel y a la estación de Barcelona-Sants.</span>
                 </li>
                 <li className="flex items-start">
                   <CheckCircle2 className="w-5 h-5 text-[#2E5A44] shrink-0 mr-3 mt-0.5" />
-                  <span>Traslados exclusivos en Barcelona agrupados entre hotel y estación de Santa Justa.</span>
+                  <span>Hotel Petit Palace Boquería Garden (4*), durante cinco noches en régimen de alojamiento y desayuno buffet.</span>
                 </li>
                 <li className="flex items-start">
                   <CheckCircle2 className="w-5 h-5 text-[#2E5A44] shrink-0 mr-3 mt-0.5" />
-                  <span>5 noches de estancia en <strong>Hotel Petit Palace Guadalquivir 4*</strong> en régimen de alojamiento y desayuno buffet.</span>
+                  <span>Entradas y visitas guiadas a todos los monumentos referidos en el Itinerario.</span>
                 </li>
                 <li className="flex items-start">
                   <CheckCircle2 className="w-5 h-5 text-[#2E5A44] shrink-0 mr-3 mt-0.5" />
-                  <span>Entradas y visitas guiadas autorizadas a todos los monumentos descritos en el itinerario.</span>
+                  <span>Entradas para la ópera I Capuleti e i Montecchi, así como para los cuatro conciertos (ver itinerario).</span>
                 </li>
                 <li className="flex items-start">
                   <CheckCircle2 className="w-5 h-5 text-[#2E5A44] shrink-0 mr-3 mt-0.5" />
-                  <span>Entradas preferentes para la Ópera en el Gran Teatre del Liceu y conciertos en L'Auditori y recitales en Triana/Jardines.</span>
+                  <span>Cinco almuerzos en cinco singulares restaurantes de Barcelona (ver itinerario).</span>
                 </li>
                 <li className="flex items-start">
                   <CheckCircle2 className="w-5 h-5 text-[#2E5A44] shrink-0 mr-3 mt-0.5" />
-                  <span>5 almuerzos incluidos en restaurantes singulares de Barcelona (bebidas y menú cerrado).</span>
+                  <span>Guía acompañante desde Madrid Puerta de Atocha hasta el regreso a la misma estación.</span>
                 </li>
                 <li className="flex items-start">
                   <CheckCircle2 className="w-5 h-5 text-[#2E5A44] shrink-0 mr-3 mt-0.5" />
-                  <span>Guía acompañante experto durante todo el trayecto desde Madrid Atocha.</span>
+                  <span>Guía local durante las visitas a prácticamente todos los monumentos (ver itinerario).</span>
                 </li>
                 <li className="flex items-start">
                   <CheckCircle2 className="w-5 h-5 text-[#2E5A44] shrink-0 mr-3 mt-0.5" />
-                  <span>Servicio de taxis y/o autobuses para trayectos internos estipulados de viaje.</span>
+                  <span>Servicio de taxis, metro y/o autobuses de línea para los distintos traslados dentro de la ciudad que lo requieran.</span>
                 </li>
                 <li className="flex items-start">
                   <CheckCircle2 className="w-5 h-5 text-[#2E5A44] shrink-0 mr-3 mt-0.5" />
-                  <span><strong>Seguro médico completo</strong> de asistencia en viaje y cobertura de cancelación.</span>
+                  <span>Seguro de asistencia y cancelación.</span>
                 </li>
               </ul>
             </div>
@@ -536,15 +536,11 @@ export default async function Home() {
               <ul className="space-y-4 text-xs sm:text-sm text-[#1C1C1C]/80">
                 <li className="flex items-start">
                   <span className="w-5 h-5 bg-[#800020]/10 rounded-full text-[#800020] font-bold text-center flex items-center justify-center shrink-0 mr-3 mt-0.5 text-xs">-</span>
-                  <span><strong>Cenas</strong> de todos los días (tiempo a libre disposición de los participantes).</span>
+                  <span>Cenas.</span>
                 </li>
                 <li className="flex items-start">
                   <span className="w-5 h-5 bg-[#800020]/10 rounded-full text-[#800020] font-bold text-center flex items-center justify-center shrink-0 mr-3 mt-0.5 text-xs">-</span>
-                  <span>Extras de hotel maletería, llamadas, minibar o en el tren AVE/IRYO.</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="w-5 h-5 bg-[#800020]/10 rounded-full text-[#800020] font-bold text-center flex items-center justify-center shrink-0 mr-3 mt-0.5 text-xs">-</span>
-                  <span>Cualquier entrada o servicio no debidamente listado en las inclusiones del programa oficial.</span>
+                  <span>Gastos extras generados en el hotel y en el tren IRYO.</span>
                 </li>
               </ul>
             </div>
@@ -618,7 +614,7 @@ export default async function Home() {
                 Barcelona Modernista
               </h3>
               <p className="text-xs text-white/50 mt-1 max-w-sm">
-                Organizado en exclusividad por el Ciclo de conciertos Manuel de Falla. Rumbos e ilusiones de 1526 bajo los acordes del s. XVI.
+                Organizado en exclusividad por el Ciclo de conciertos Manuel de Falla. Acordes de principios del siglo XX bajo la maravillosa luz del modernismo catalán.
               </p>
             </div>
 

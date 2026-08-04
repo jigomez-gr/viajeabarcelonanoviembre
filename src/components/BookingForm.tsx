@@ -136,8 +136,8 @@ export default function BookingForm({ initialAvailablePlazas }: BookingFormProps
     }, []);
 
     // Price parameters
-    const PRECIO_BASE = 1630;
-    const SUPLEMENTO_INDIVIDUAL = 260;
+    const PRECIO_BASE = 2770;
+    const SUPLEMENTO_INDIVIDUAL = 515;
     const unitPrice = tipoHabitacion === "individual" ? (PRECIO_BASE + SUPLEMENTO_INDIVIDUAL) : PRECIO_BASE;
     const totalPrice = numeroPlazas * unitPrice;
 
@@ -724,7 +724,7 @@ export default function BookingForm({ initialAvailablePlazas }: BookingFormProps
                                             <span className="block text-xs text-[#1C1C1C]/60 mt-1">
                                                 Compartida con acompañante.
                                             </span>
-                                            <span className="block text-sm font-semibold text-[#800020] mt-2">1.630 € / pers</span>
+                                            <span className="block text-sm font-semibold text-[#800020] mt-2">2.770 € / pers</span>
                                         </span>
                                     </label>
 
@@ -740,9 +740,9 @@ export default function BookingForm({ initialAvailablePlazas }: BookingFormProps
                                         <span className="ml-3">
                                             <span className="block text-sm font-semibold text-[#1C1C1C]">Habitación Doble Uso Individual</span>
                                             <span className="block text-xs text-[#1C1C1C]/60 mt-1">
-                                                Suplemento individual de +260 € incluido.
+                                                Suplemento individual de +515 € incluido.
                                             </span>
-                                            <span className="block text-sm font-semibold text-[#800020] mt-2">1.890 € / pers</span>
+                                            <span className="block text-sm font-semibold text-[#800020] mt-2">3.285 € / pers</span>
                                         </span>
                                     </label>
                                 </div>

@@ -280,6 +280,7 @@ interface ItineraryTimelineProps {
         "itinerario-3": boolean;
         "itinerario-4": boolean;
         "itinerario-5": boolean;
+        "itinerario-6": boolean;
         resumen: boolean;
     };
 }
@@ -429,12 +430,10 @@ export default function ItineraryTimeline({ videosExist }: ItineraryTimelineProp
     };
 
     const getVideoKey = (dayId: number): keyof ItineraryTimelineProps["videosExist"] => {
-        if (dayId === 6) return "resumen";
         return `itinerario-${dayId}` as any;
     };
 
     const getVideoPath = (dayId: number): string => {
-        if (dayId === 6) return "/videos/resumen.mp4";
         return `/videos/itinerario-${dayId}.mp4`;
     };
 
@@ -611,49 +610,60 @@ export default function ItineraryTimeline({ videosExist }: ItineraryTimelineProp
                                 {/* Video or Summary Image Box */}
                                 <div className="relative aspect-video rounded-md overflow-hidden bg-stone-100 border border-stone-200 shadow-sm">
                                     {currentMode === "summary" ? (
-                                        /* SUMMARY IMAGE WITH INTERPRETER-STYLE OVERLAY */
-                                        <div
-                                            onClick={() => setMode(day.id, "video")}
-                                            className="relative w-full h-full cursor-pointer group"
-                                            title="Haz clic para ver el vídeo completo"
-                                        >
-                                            <img
-                                                src={thumb.src}
-                                                alt={thumb.caption}
-                                                className="w-full h-full object-cover group-hover:scale-105 transition duration-500"
-                                            />
-                                            {/* ccmfalla.com interpreter card theme overlay: dark filter with centered elegant elements */}
-                                            <div className="absolute inset-0 bg-black/45 group-hover:bg-[#800020]/65 transition-all duration-300 flex flex-col items-center justify-center p-6 text-center text-white">
-                                                {/* Title */}
-                                                <h5 className="text-[17px] sm:text-[19px] font-bold text-white tracking-wide leading-snug drop-shadow-sm">
-                                                    {DAY_OVERLAY_DETAILS[day.id].title}
-                                                </h5>
+                                        hasVideo ? (
+                                            <div className="w-full h-full bg-[#1C1C1C] relative aspect-video">
+                                                <video
+                                                    src={getVideoPath(day.id)}
+                                                    controls
+                                                    className="w-full h-full object-cover"
+                                                    poster={thumb.src}
+                                                />
+                                            </div>
+                                        ) : (
+                                            /* SUMMARY IMAGE WITH INTERPRETER-STYLE OVERLAY */
+                                            <div
+                                                onClick={() => setMode(day.id, "video")}
+                                                className="relative w-full h-full cursor-pointer group"
+                                                title="Haz clic para ver el vídeo completo"
+                                            >
+                                                <img
+                                                    src={thumb.src}
+                                                    alt={thumb.caption}
+                                                    className="w-full h-full object-cover group-hover:scale-105 transition duration-500"
+                                                />
+                                                {/* ccmfalla.com interpreter card theme overlay: dark filter with centered elegant elements */}
+                                                <div className="absolute inset-0 bg-black/45 group-hover:bg-[#800020]/65 transition-all duration-300 flex flex-col items-center justify-center p-6 text-center text-white">
+                                                    {/* Title */}
+                                                    <h5 className="text-[17px] sm:text-[19px] font-bold text-white tracking-wide leading-snug drop-shadow-sm">
+                                                        {DAY_OVERLAY_DETAILS[day.id].title}
+                                                    </h5>
 
-                                                {/* Subtitle / Category: all caps gold accent */}
-                                                <span className="text-[10px] sm:text-[11px] font-bold tracking-[0.2em] text-[#E9C168] mt-1.5 uppercase">
-                                                    {DAY_OVERLAY_DETAILS[day.id].category}
-                                                </span>
+                                                    {/* Subtitle / Category: all caps gold accent */}
+                                                    <span className="text-[10px] sm:text-[11px] font-bold tracking-[0.2em] text-[#E9C168] mt-1.5 uppercase">
+                                                        {DAY_OVERLAY_DETAILS[day.id].category}
+                                                    </span>
 
-                                                {/* Small details description in italic (Alegreya/Cormorant feel) */}
-                                                <p className="text-[12px] sm:text-[13px] italic text-[#FAF9F6]/90 mt-2 font-serif font-light max-w-[280px]">
-                                                    {DAY_OVERLAY_DETAILS[day.id].description}
-                                                </p>
+                                                    {/* Small details description in italic (Alegreya/Cormorant feel) */}
+                                                    <p className="text-[12px] sm:text-[13px] italic text-[#FAF9F6]/90 mt-2 font-serif font-light max-w-[280px]">
+                                                        {DAY_OVERLAY_DETAILS[day.id].description}
+                                                    </p>
 
-                                                {/* Date */}
-                                                <span className="text-[10px] text-stone-300 font-sans tracking-wider mt-2.5 opacity-85">
-                                                    {DAY_OVERLAY_DETAILS[day.id].date}
-                                                </span>
+                                                    {/* Date */}
+                                                    <span className="text-[10px] text-stone-300 font-sans tracking-wider mt-2.5 opacity-85">
+                                                        {DAY_OVERLAY_DETAILS[day.id].date}
+                                                    </span>
 
-                                                {/* Play Button Icon: Hollow white circle with custom play triangle arrow */}
-                                                <div className="mt-4 flex items-center justify-center">
-                                                    <div className="w-9 h-9 rounded-full border border-white/50 flex flex-col items-center justify-center bg-black/10 group-hover:bg-[#800020]/80 group-hover:scale-110 shadow-md transition-all duration-300">
-                                                        <svg className="w-3.5 h-3.5 fill-current text-white translate-x-[0.5px]" viewBox="0 0 24 24">
-                                                            <path d="M8 5v14l11-7z" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" />
-                                                        </svg>
+                                                    {/* Play Button Icon: Hollow white circle with custom play triangle arrow */}
+                                                    <div className="mt-4 flex items-center justify-center">
+                                                        <div className="w-9 h-9 rounded-full border border-white/50 flex flex-col items-center justify-center bg-black/10 group-hover:bg-[#800020]/80 group-hover:scale-110 shadow-md transition-all duration-300">
+                                                            <svg className="w-3.5 h-3.5 fill-current text-white translate-x-[0.5px]" viewBox="0 0 24 24">
+                                                                <path d="M8 5v14l11-7z" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" />
+                                                            </svg>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
+                                        )
                                     ) : (
                                         /* VIDEO PLAYLIST PLAYER & DUAL PLAYER CONTROLS */
                                         (() => {

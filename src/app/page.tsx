@@ -23,6 +23,7 @@ function checkVideosExist() {
     "itinerario-3": fs.existsSync(path.join(publicVideosDir, "itinerario-3.mp4")),
     "itinerario-4": fs.existsSync(path.join(publicVideosDir, "itinerario-4.mp4")),
     "itinerario-5": fs.existsSync(path.join(publicVideosDir, "itinerario-5.mp4")),
+    "itinerario-6": fs.existsSync(path.join(publicVideosDir, "itinerario-6.mp4")),
     resumen: fs.existsSync(path.join(publicVideosDir, "resumen.mp4")),
   };
 }

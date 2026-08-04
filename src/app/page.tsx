@@ -419,6 +419,79 @@ export default async function Home() {
         </div>
       </section>
 
+      {/* 9.5 Sección de Vídeos de Viajes Realizados */}
+      <section id="viajes-realizados" className="py-24 bg-[#FAF9F6] border-b border-[#C5A059]/20 scroll-mt-24">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <span className="text-xs uppercase tracking-widest text-[#C5A059] font-bold block mb-2">
+              Recuerdos del Ciclo
+            </span>
+            <h2 className="font-serif text-3xl sm:text-5xl font-bold text-[#800020]">
+              Viajes ya Realizados
+            </h2>
+            <p className="text-sm text-[#1C1C1C]/60 mt-3 max-w-xl mx-auto">
+              Reviva la atmósfera de nuestras expediciones pasadas a través de los vídeos de recuerdo de cada viaje.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+            {/* Barcelona Enero 2026 */}
+            <div className="bg-white rounded-xl border border-stone-200 overflow-hidden shadow-sm hover:shadow-md transition duration-300 flex flex-col">
+              <div className="relative aspect-video bg-[#1C1C1C] flex items-center justify-center border-b border-stone-100">
+                <video
+                  src="/videos/previoabarcelona.mp4"
+                  controls
+                  className="w-full h-full object-cover"
+                  poster="https://images.unsplash.com/photo-1583422409516-2895a77efedd?q=80&w=800&auto=format&fit=crop"
+                />
+              </div>
+              <div className="p-5 flex-1 flex flex-col justify-between">
+                <div>
+                  <div className="flex items-center justify-between gap-2 mb-2">
+                    <h4 className="font-serif text-lg font-bold text-[#800020]">
+                      Barcelona (Enero 2026)
+                    </h4>
+                    <span className="text-[10px] bg-[#800020]/10 text-[#800020] border border-[#800020]/20 px-2 py-0.5 rounded font-bold uppercase tracking-wider font-sans">
+                      Recuerdo
+                    </span>
+                  </div>
+                  <p className="text-xs sm:text-sm text-[#1C1C1C]/75 leading-relaxed">
+                    Un recorrido completo por los monumentos históricos y recitales exclusivos que disfrutamos durante nuestro viaje de conciertos a Barcelona en enero de 2026.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Sevilla 2025 */}
+            <div className="bg-white rounded-xl border border-stone-200 overflow-hidden shadow-sm hover:shadow-md transition duration-300 flex flex-col">
+              <div className="relative aspect-video bg-[#1C1C1C] flex items-center justify-center border-b border-stone-100">
+                <video
+                  src="/videos/viajeprevioasevilla.mp4"
+                  controls
+                  className="w-full h-full object-cover"
+                  poster="https://images.unsplash.com/photo-1549887534-1541e9326642?q=80&w=800&auto=format&fit=crop"
+                />
+              </div>
+              <div className="p-5 flex-1 flex flex-col justify-between">
+                <div>
+                  <div className="flex items-center justify-between gap-2 mb-2">
+                    <h4 className="font-serif text-lg font-bold text-[#800020]">
+                      Sevilla (Año 2025)
+                    </h4>
+                    <span className="text-[10px] bg-[#800020]/10 text-[#800020] border border-[#800020]/20 px-2 py-0.5 rounded font-bold uppercase tracking-wider font-sans">
+                      Recuerdo
+                    </span>
+                  </div>
+                  <p className="text-xs sm:text-sm text-[#1C1C1C]/75 leading-relaxed">
+                    Las memorias líricas e históricas de nuestro viaje musical a Sevilla durante el año 2025, recorriendo el patrimonio hispalense.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* 10. Precio y Plazas */}
       <section id="precios" className="py-24 scroll-mt-24">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center bg-white border border-[#C5A059]/30 rounded-xl p-8 sm:p-12 shadow-xl">

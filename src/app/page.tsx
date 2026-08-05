@@ -8,6 +8,7 @@ import VideoGallery from "@/components/VideoGallery";
 import BookingForm from "@/components/BookingForm";
 import HeroMedia from "@/components/HeroMedia";
 import PrologoGallery from "@/components/PrologoGallery";
+import AtmosphereGallery from "@/components/AtmosphereGallery";
 
 export const dynamic = "force-dynamic";
 import {
@@ -29,8 +30,72 @@ function checkVideosExist() {
   };
 }
 
+// Server-side helper to read all images inside public/imagenes/diaX subdirectories
+function getSubImages(dayNum: number): string[] {
+  const publicDir = path.join(process.cwd(), "public", "imagenes", `dia${dayNum}`);
+  if (!fs.existsSync(publicDir)) return [];
+  try {
+    return fs.readdirSync(publicDir)
+      .filter((file) => /\.(jpg|jpeg|png|webp)$/i.test(file))
+      .map((file) => `/imagenes/dia${dayNum}/${file}`);
+  } catch (e) {
+    return [];
+  }
+}
+
 export default async function Home() {
   const videosExist = checkVideosExist();
+
+  const atmosphereDays = [
+    {
+      dayNum: 1,
+      title: "Llegada y Ópera en el Liceu",
+      subtitle: "Ver itinerario del trayecto",
+      href: "#dia-1",
+      mainImage: "/imagenes/dia1.jpg",
+      subImages: getSubImages(1)
+    },
+    {
+      dayNum: 2,
+      title: "Domènech i Montaner y Quartet Gerhard",
+      subtitle: "Ver recital y modernismo",
+      href: "#dia-2",
+      mainImage: "/imagenes/dia2.jpg",
+      subImages: getSubImages(2)
+    },
+    {
+      dayNum: 3,
+      title: "Gaudí, Amatller y Réquiem de Verdi",
+      subtitle: "Ver Casas Modernistas y Réquiem",
+      href: "#dia-3",
+      mainImage: "/imagenes/dia3.jpg",
+      subImages: getSubImages(3)
+    },
+    {
+      dayNum: 4,
+      title: "Park Güell, Sagrada Familia y Falla",
+      subtitle: "Ver templos acústicos",
+      href: "#dia-4",
+      mainImage: "/imagenes/dia4.jpg",
+      subImages: getSubImages(4)
+    },
+    {
+      dayNum: 5,
+      title: "Museo de la Música y Atlántida",
+      subtitle: "Ver exposición de música",
+      href: "#dia-5",
+      mainImage: "/imagenes/dia5.jpg",
+      subImages: getSubImages(5)
+    },
+    {
+      dayNum: 6,
+      title: "Pablo Picasso Joven y Despedida",
+      subtitle: "Ver almuerzo y Born",
+      href: "#dia-6",
+      mainImage: "/imagenes/dia6.jpg",
+      subImages: getSubImages(6)
+    }
+  ];
 
   // Database queries for occupancy limits
   let remainingPlazas = 14;
@@ -311,71 +376,11 @@ export default async function Home() {
               Atmósfera del Viaje
             </span>
             <h2 className="font-serif text-3xl sm:text-4xl font-bold text-[#800020]">
-              Galería Editorial de Barcelona
+              Galería de Diapositivas del Viaje a Barcelona
             </h2>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 font-sans">
-            {/* Día 1 */}
-            <a href="#dia-1" className="relative aspect-[4/3] md:aspect-square lg:aspect-[4/3] overflow-hidden rounded-xl group border border-[#C5A059]/20 block shadow-sm hover:shadow-md transition">
-              <img src="https://images.unsplash.com/photo-1583422409516-2895a77efedd?q=80&w=800&auto=format&fit=crop" alt="Día 1" className="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent group-hover:from-[#800020]/85 group-hover:via-[#800020]/25 group-hover:to-transparent transition duration-350 flex flex-col justify-end p-5 text-white">
-                <span className="text-[10px] font-bold tracking-[0.2em] text-[#E9C168] uppercase mb-1">Día 1</span>
-                <h4 className="font-serif text-base sm:text-lg font-bold text-white tracking-wide leading-snug">Llegada y Ópera en el Liceu</h4>
-                <p className="text-[10px] sm:text-xs italic text-stone-200 mt-1 font-serif">Ver itinerario del trayecto &rarr;</p>
-              </div>
-            </a>
-
-            {/* Día 2 */}
-            <a href="#dia-2" className="relative aspect-[4/3] md:aspect-square lg:aspect-[4/3] overflow-hidden rounded-xl group border border-[#C5A059]/20 block shadow-sm hover:shadow-md transition">
-              <img src="https://images.unsplash.com/photo-1620843245451-b0db36605e55?q=80&w=800&auto=format&fit=crop" alt="Día 2" className="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent group-hover:from-[#800020]/85 group-hover:via-[#800020]/25 group-hover:to-transparent transition duration-350 flex flex-col justify-end p-5 text-white">
-                <span className="text-[10px] font-bold tracking-[0.2em] text-[#E9C168] uppercase mb-1">Día 2</span>
-                <h4 className="font-serif text-base sm:text-lg font-bold text-white tracking-wide leading-snug">Domènech i Montaner y Quartet Gerhard</h4>
-                <p className="text-[10px] sm:text-xs italic text-stone-200 mt-1 font-serif">Ver recital y modernismo &rarr;</p>
-              </div>
-            </a>
-
-            {/* Día 3 */}
-            <a href="#dia-3" className="relative aspect-[4/3] md:aspect-square lg:aspect-[4/3] overflow-hidden rounded-xl group border border-[#C5A059]/20 block shadow-sm hover:shadow-md transition">
-              <img src="https://images.unsplash.com/photo-1549887534-1541e9326642?q=80&w=800&auto=format&fit=crop" alt="Día 3" className="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent group-hover:from-[#800020]/85 group-hover:via-[#800020]/25 group-hover:to-transparent transition duration-350 flex flex-col justify-end p-5 text-white">
-                <span className="text-[10px] font-bold tracking-[0.2em] text-[#E9C168] uppercase mb-1">Día 3</span>
-                <h4 className="font-serif text-base sm:text-lg font-bold text-white tracking-wide leading-snug">Gaudí, Amatller y Réquiem de Verdi</h4>
-                <p className="text-[10px] sm:text-xs italic text-stone-200 mt-1 font-serif">Ver Casas Modernistas y Réquiem &rarr;</p>
-              </div>
-            </a>
-
-            {/* Día 4 */}
-            <a href="#dia-4" className="relative aspect-[4/3] md:aspect-square lg:aspect-[4/3] overflow-hidden rounded-xl group border border-[#C5A059]/20 block shadow-sm hover:shadow-md transition">
-              <img src="https://images.unsplash.com/photo-1511527661048-7fe73d85e9a4?q=80&w=800&auto=format&fit=crop" alt="Día 4" className="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent group-hover:from-[#800020]/85 group-hover:via-[#800020]/25 group-hover:to-transparent transition duration-350 flex flex-col justify-end p-5 text-white">
-                <span className="text-[10px] font-bold tracking-[0.2em] text-[#E9C168] uppercase mb-1">Día 4</span>
-                <h4 className="font-serif text-base sm:text-lg font-bold text-white tracking-wide leading-snug">Park Güell, Sagrada Familia y Falla</h4>
-                <p className="text-[10px] sm:text-xs italic text-stone-200 mt-1 font-serif">Ver templos acústicos &rarr;</p>
-              </div>
-            </a>
-
-            {/* Día 5 */}
-            <a href="#dia-5" className="relative aspect-[4/3] md:aspect-square lg:aspect-[4/3] overflow-hidden rounded-xl group border border-[#C5A059]/20 block shadow-sm hover:shadow-md transition">
-              <img src="https://images.unsplash.com/photo-1604999333679-b86d54738315?q=80&w=800&auto=format&fit=crop" alt="Día 5" className="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent group-hover:from-[#800020]/85 group-hover:via-[#800020]/25 group-hover:to-transparent transition duration-350 flex flex-col justify-end p-5 text-white">
-                <span className="text-[10px] font-bold tracking-[0.2em] text-[#E9C168] uppercase mb-1">Día 5</span>
-                <h4 className="font-serif text-base sm:text-lg font-bold text-white tracking-wide leading-snug">Museo de la Música y Atlántida</h4>
-                <p className="text-[10px] sm:text-xs italic text-stone-200 mt-1 font-serif">Ver exposición de música &rarr;</p>
-              </div>
-            </a>
-
-            {/* Día 6 */}
-            <a href="#dia-6" className="relative aspect-[4/3] md:aspect-square lg:aspect-[4/3] overflow-hidden rounded-xl group border border-[#C5A059]/20 block shadow-sm hover:shadow-md transition">
-              <img src="https://images.unsplash.com/photo-1587334206574-35113a8d75e9?q=80&w=800&auto=format&fit=crop" alt="Día 6" className="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent group-hover:from-[#800020]/85 group-hover:via-[#800020]/25 group-hover:to-transparent transition duration-350 flex flex-col justify-end p-5 text-white">
-                <span className="text-[10px] font-bold tracking-[0.2em] text-[#E9C168] uppercase mb-1">Día 6</span>
-                <h4 className="font-serif text-base sm:text-lg font-bold text-white tracking-wide leading-snug">Pablo Picasso Joven y Despedida</h4>
-                <p className="text-[10px] sm:text-xs italic text-stone-200 mt-1 font-serif">Ver almuerzo y Born &rarr;</p>
-              </div>
-            </a>
-          </div>
+          <AtmosphereGallery days={atmosphereDays} />
         </div>
       </section>
 

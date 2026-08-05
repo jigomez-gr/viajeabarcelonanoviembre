@@ -7,6 +7,7 @@ import ItineraryTimeline from "@/components/ItineraryTimeline";
 import VideoGallery from "@/components/VideoGallery";
 import BookingForm from "@/components/BookingForm";
 import HeroMedia from "@/components/HeroMedia";
+import PrologoGallery from "@/components/PrologoGallery";
 
 export const dynamic = "force-dynamic";
 import {
@@ -217,30 +218,7 @@ export default async function Home() {
             </div>
 
             {/* Visual aspect */}
-            <div className="relative rounded-2xl overflow-hidden shadow-2xl group border border-[#C5A059]/30">
-              <img
-                src="https://images.unsplash.com/photo-1620843245451-b0db36605e55?q=80&w=800&auto=format&fit=crop"
-                alt="Sant Pau Recinto Modernista en Barcelona"
-                className="w-full h-[400px] object-cover group-hover:scale-105 transition duration-700"
-              />
-              {/* Dark red gradient cover at the bottom */}
-              <div className="absolute inset-0 bg-gradient-to-t from-[#800020]/95 via-black/20 to-transparent pointer-events-none" />
-
-              {/* Rounded crown overlay style */}
-              <div className="absolute bottom-6 left-6 right-6 flex items-center gap-4 text-white">
-                <div className="flex-shrink-0 w-11 h-11 rounded-full border border-[#E9C168] bg-[#800020]/60 flex items-center justify-center text-[#E9C168] shadow-md">
-                  <svg className="w-5 h-5 fill-current" viewBox="0 0 24 24">
-                    <path d="M12 2l2.5 5.5L20 8.5l-4.5 4 1.5 6-5-3-5 3 1.5-6-4.5-4 5.5-1z" />
-                  </svg>
-                </div>
-                <div>
-                  <h4 className="font-serif text-xl sm:text-2xl font-bold tracking-wide">Sant Pau Recinto Modernista</h4>
-                  <p className="text-[9px] sm:text-[10px] tracking-[0.15em] text-[#E9C168] uppercase font-semibold font-sans mt-0.5">
-                    Recinto Modernista de Sant Pau, Barcelona
-                  </p>
-                </div>
-              </div>
-            </div>
+            <PrologoGallery />
 
           </div>
         </div>

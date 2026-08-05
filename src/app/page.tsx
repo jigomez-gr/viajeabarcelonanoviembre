@@ -126,8 +126,6 @@ export default async function Home() {
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center flex flex-col items-center z-10 w-full">
           <div className="inline-flex items-center space-x-2 text-[10px] sm:text-xs tracking-[0.2em] text-[#C5A059] uppercase font-bold mb-2">
             <span>Ciclo de conciertos Manuel de Falla</span>
-            <span className="text-[#C5A059]/40">•</span>
-            <span>Presentación Oficial</span>
           </div>
 
           <h1 className="font-serif text-3xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-[#800020] uppercase leading-tight mb-2.5 select-none">
@@ -137,7 +135,7 @@ export default async function Home() {
           <p className="font-sans text-sm sm:text-base md:text-lg text-stone-500 max-w-4xl tracking-wide">
             Viaje de conciertos y modernismo catalán
           </p>
-          <p className="font-serif text-sm sm:text-base md:text-lg text-stone-400 max-w-4xl mb-4 sm:mb-5 italic tracking-wide mt-1">
+          <p className="font-sans text-sm sm:text-base md:text-lg text-stone-500 max-w-4xl mb-4 sm:mb-5 font-semibold tracking-wide mt-1">
             (2 de Noviembre — 7 de Noviembre de 2026)
           </p>
 

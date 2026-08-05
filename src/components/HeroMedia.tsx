@@ -7,21 +7,13 @@ export default function HeroMedia() {
     const [isMuted, setIsMuted] = useState(true);
     const [isPlaying, setIsPlaying] = useState(true); // video playing
     const videoRef = useRef<HTMLVideoElement>(null);
-    const audioRef = useRef<HTMLAudioElement>(null);
 
-    // Sync state with audio playback
+    // Sync state with video muting
     useEffect(() => {
-        const audio = audioRef.current;
-        if (!audio) return;
+        const video = videoRef.current;
+        if (!video) return;
 
-        if (isMuted) {
-            audio.pause();
-        } else {
-            audio.play().catch((err) => {
-                console.warn("Autoplay block or audio play failed:", err);
-                setIsMuted(true);
-            });
-        }
+        video.muted = isMuted;
     }, [isMuted]);
 
     const toggleMute = () => {
@@ -56,20 +48,12 @@ export default function HeroMedia() {
 
     return (
         <div className="relative w-full aspect-video rounded-md overflow-hidden bg-black/5 border border-stone-200 group">
-            {/* Background Audio Loop */}
-            <audio
-                ref={audioRef}
-                src="/sonidos_mp3/hero.mp3"
-                loop
-                preload="auto"
-            />
-
             {/* Video Element */}
             <video
                 ref={videoRef}
                 autoPlay
                 loop
-                muted
+                muted={isMuted}
                 playsInline
                 className="absolute inset-0 w-full h-full object-cover select-none"
             >

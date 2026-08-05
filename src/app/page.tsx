@@ -196,7 +196,7 @@ export default async function Home() {
             {/* Card 2 */}
             <div className="bg-[#FAF9F6] p-5 rounded-lg border border-[#C5A059]/20 text-center hover:shadow-md transition">
               <span className="block text-xl font-serif font-bold text-[#800020] mb-2 leading-none">Petit Palace</span>
-              <span className="block text-xs uppercase tracking-widest text-[#1C1C1C]/60 font-semibold">Hotel Boutique 4*</span>
+              <span className="block text-xs uppercase tracking-widest text-[#1C1C1C]/60 font-semibold">Boquerie Garden</span>
             </div>
 
             {/* Card 3 */}
@@ -219,7 +219,7 @@ export default async function Home() {
 
             {/* Card 6 */}
             <div className="bg-[#FAF9F6] p-5 rounded-lg border border-[#c5a059]/25 text-center hover:shadow-md transition">
-              <span className="block text-2xl font-serif font-black text-[#2E5A44] mb-1">1.630 €</span>
+              <span className="block text-2xl font-serif font-black text-[#2E5A44] mb-1">2.770 €</span>
               <span className="block text-xs uppercase tracking-widest text-[#1C1C1C]/60 font-semibold">Todo incluido *</span>
             </div>
 

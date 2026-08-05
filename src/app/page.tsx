@@ -130,12 +130,15 @@ export default async function Home() {
             <span>Presentación Oficial</span>
           </div>
 
-          <h1 className="font-serif text-3xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-[#800020] uppercase leading-[1.1] mb-1.5 select-none">
-            BARCELONA, <span className="text-stone-800 block text-2xl sm:text-4xl md:text-5xl mt-1">Modernista</span>
+          <h1 className="font-serif text-3xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-[#800020] uppercase leading-tight mb-2.5 select-none">
+            LA BARCELONA MODERNISTA
           </h1>
 
-          <p className="font-serif text-xs sm:text-base md:text-lg text-stone-500 max-w-4xl mb-2 sm:mb-3 italic tracking-wide leading-relaxed">
-            Viaje de conciertos y modernismo <span className="inline-block">(2 de Noviembre — 7 de Noviembre de 2026)</span>
+          <p className="font-sans text-xs sm:text-sm md:text-base text-stone-500 max-w-4xl tracking-wide">
+            Viaje de conciertos y modernismo catalán
+          </p>
+          <p className="font-serif text-xs sm:text-sm md:text-base text-stone-400 max-w-4xl mb-4 sm:mb-5 italic tracking-wide mt-1">
+            (2 de Noviembre — 7 de Noviembre de 2026)
           </p>
 
           {/* Framed Media Block mimicking ccmfalla.com Paintings */}

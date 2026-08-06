@@ -28,7 +28,7 @@ model Reserva {
   createdAt             DateTime @default(now())
   updatedAt             DateTime @updatedAt
 
-  @@map("ReservaViajeBarcelonaNoviembre")
+  @@map("ReservaViajeBarcelonaNoviembre2026")
   @@schema("ccmfalla")
 }
 
@@ -78,6 +78,6 @@ model PagosUsuario {
   fechaPago        DateTime? @default(now()) @map("fecha_pago")
   stripeSessionId  String?   @map("stripe_session_id") @db.VarChar(255)
 
-  @@map("pagosusuarios")
+  @@map("pagosusuariosviajebarcelonanoviembre2026")
   @@schema("ccmfalla")
 }

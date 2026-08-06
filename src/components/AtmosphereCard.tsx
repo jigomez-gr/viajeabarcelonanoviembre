@@ -45,7 +45,7 @@ export default function AtmosphereCard({
                 className="relative aspect-[4/3] overflow-hidden group/img block select-none bg-stone-100"
             >
                 <img
-                    src={activeImage}
+                    src={`${activeImage}?v=2`}
                     alt={`Día ${dayNum}`}
                     className="w-full h-full object-cover group-hover/img:scale-105 transition duration-700"
                 />
@@ -100,8 +100,8 @@ export default function AtmosphereCard({
                                 setCurrentIndex(idx);
                             }}
                             className={`w-12 h-9 rounded overflow-hidden flex-shrink-0 border-2 transition ${currentIndex === idx
-                                    ? "border-[#800020] opacity-100"
-                                    : "border-transparent opacity-50 hover:opacity-100"
+                                ? "border-[#800020] opacity-100"
+                                : "border-transparent opacity-50 hover:opacity-100"
                                 }`}
                         >
                             <img src={img} alt="" className="w-full h-full object-cover" />
@@ -123,8 +123,8 @@ export default function AtmosphereCard({
                             setViewMode("main");
                         }}
                         className={`px-3 py-1 transition ${viewMode === "main"
-                                ? "bg-[#800020] text-white"
-                                : "bg-white text-stone-600 hover:text-[#800020]"
+                            ? "bg-[#800020] text-white"
+                            : "bg-white text-stone-600 hover:text-[#800020]"
                             }`}
                     >
                         Foto Principal
@@ -136,8 +136,8 @@ export default function AtmosphereCard({
                             setViewMode("list");
                         }}
                         className={`px-3 py-1 transition ${viewMode === "list"
-                                ? "bg-[#800020] text-white"
-                                : "bg-white text-stone-600 hover:text-[#800020]"
+                            ? "bg-[#800020] text-white"
+                            : "bg-white text-stone-600 hover:text-[#800020]"
                             }`}
                         disabled={subImages.length === 0}
                     >

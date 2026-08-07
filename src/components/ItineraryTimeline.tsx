@@ -378,7 +378,10 @@ const ITINERARY_VIDEOS: { [key: number]: { title: string; filePath: string; yout
     5: [
         { title: "Museo de la Música", filePath: "/videos_itinerario/dia4/museo_musica.mp4", youtubeUrl: "https://www.youtube.com/watch?v=lRGoiNF9QoI" }
     ],
-    6: []
+    6: [
+        { title: "Pablo Picasso y Barcelona | Análisis de Las Señoritas de Avignon", filePath: "", youtubeUrl: "https://www.youtube.com/watch?v=u0sU55yyDiE" },
+        { title: "Manuel de Falla: El Sombrero de Tres Picos 1919", filePath: "", youtubeUrl: "https://www.youtube.com/watch?v=LMtFHKb2j58" }
+    ]
 };
 
 

@@ -581,7 +581,7 @@ export default function ItineraryTimeline({ videosExist }: ItineraryTimelineProp
                                         Diario Visual del Día
                                     </h4>
                                     <span className="text-[9px] uppercase tracking-wider text-[#C5A059] font-semibold">
-                                        Falla multimedia • Día {day.id}
+                                        Resumen multimedia • Día {day.id}
                                     </span>
                                 </div>
 
@@ -603,7 +603,7 @@ export default function ItineraryTimeline({ videosExist }: ItineraryTimelineProp
                                             : "bg-[#FAF9F6] text-stone-600 hover:text-[#800020]"
                                             }`}
                                     >
-                                        Vídeo Completo
+                                        Vídeos Relacionados
                                     </button>
                                 </div>
 
@@ -624,7 +624,7 @@ export default function ItineraryTimeline({ videosExist }: ItineraryTimelineProp
                                             <div
                                                 onClick={() => setMode(day.id, "video")}
                                                 className="relative w-full h-full cursor-pointer group"
-                                                title="Haz clic para ver el vídeo completo"
+                                                title="Haz clic para ver los vídeos relacionados"
                                             >
                                                 <img
                                                     src={thumb.src}

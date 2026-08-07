@@ -279,21 +279,16 @@ export default async function Home() {
             </div>
           </div>
 
-          {/* Grid Layout: Photos on the left, Video on the right */}
+          {/* Grid Layout: Video on the left, Photos on the right */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-stretch mt-12">
 
-            {/* Gallery (Left Column) */}
-            <div>
-              <PrologoGallery />
-            </div>
-
-            {/* Video Container (Right Column) */}
+            {/* Video Container (Left Column) */}
             <div className="flex flex-col justify-center">
               <div className="bg-white p-2.5 sm:p-3 rounded-xl border border-[#C5A059]/25 shadow-xl shadow-[#800020]/5 hover:shadow-2xl transition duration-500 font-sans w-full">
                 <div className="relative w-full aspect-video rounded-lg overflow-hidden bg-black/5 border border-stone-200">
                   <video
                     src="/videos/prologo.mp4"
-                    poster="/imagenes/prologo.jpg"
+                    poster="/imagenes/prologo/monumentoacolon0_cieloazul.jpg"
                     controls
                     playsInline
                     className="w-full h-full object-cover select-none"
@@ -308,6 +303,11 @@ export default async function Home() {
                   </p>
                 </div>
               </div>
+            </div>
+
+            {/* Gallery (Right Column) */}
+            <div>
+              <PrologoGallery />
             </div>
 
           </div>

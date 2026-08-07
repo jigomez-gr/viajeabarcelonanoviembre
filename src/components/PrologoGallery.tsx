@@ -13,9 +13,9 @@ interface PrologueItem {
 
 const PROLOGUE_ITEMS: PrologueItem[] = [
     {
-        src: "/imagenes/prologo.jpg",
+        src: "/imagenes/prologo/monumentoacolon0_cieloazul.jpg",
         title: "Resumen Virtual",
-        category: "EL MODERNISMO Y LA MÚSICA"
+        category: "LA BARCELONA MODERNISTA"
     },
     {
         src: "/imagenes/prologo/Casa Batllo0.jpg",

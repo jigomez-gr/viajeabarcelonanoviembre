@@ -24,11 +24,11 @@ function simulateEmails(reserva: any) {
 [SIMULACIÓN DE EMAIL] - CONFIRMACIÓN DE RESERVA Y PAGO
 ============================================================
 Destinatario: ${reserva.email}
-Asunto: Confirmación de pago y reserva - Barcelona Modernista
+Asunto: Confirmación de pago y reserva - La Barcelona Modernista
 Cuerpo:
 Estimado/a ${reserva.nombre},
 
-Hemos recibido correctamente el pago de su reserva para el viaje 'Barcelona Modernista' que tendrá lugar del 2 al 7 de noviembre de 2026.
+Hemos recibido correctamente el pago de su reserva para el viaje 'La Barcelona Modernista' que tendrá lugar del 2 al 7 de noviembre de 2026.
 
 Detalles de la Reserva:
 - ID de Reserva: ${reserva.id}
@@ -49,7 +49,7 @@ Nos pondremos en contacto con usted para ultimar los detalles organizativos del 
 [SIMULACIÓN DE EMAIL] - NOTIFICACIÓN PARA ORGANIZACIÓN
 ============================================================
 Destinatario: jose_manuel_hdezblanco@hotmail.com
-Asunto: ¡NUEVA RESERVA INFORMADA! - Barcelona Modernista
+Asunto: ¡NUEVA RESERVA INFORMADA! - La Barcelona Modernista
 Cuerpo:
 Hola José Manuel,
 

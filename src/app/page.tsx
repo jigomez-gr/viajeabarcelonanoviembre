@@ -129,7 +129,7 @@ export default async function Home() {
           </div>
 
           <h1 className="font-serif text-3xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-[#800020] uppercase leading-tight mb-2.5 select-none">
-            BARCELONA MODERNISTA
+            LA BARCELONA MODERNISTA
           </h1>
 
           <p className="font-serif text-xs sm:text-sm text-stone-500 max-w-4xl italic tracking-wide">
@@ -145,7 +145,7 @@ export default async function Home() {
             {/* Caption in the ccmfalla.com Painting Style */}
             <div className="mt-4 text-center space-y-1 select-none border-t border-[#C5A059]/10 pt-4">
               <p className="font-serif italic font-bold text-[#800020] text-sm sm:text-base">
-                "Barcelona Modernista"
+                "La Barcelona Modernista"
               </p>
               <p className="tracking-widest uppercase text-[9px] sm:text-[10px] text-stone-500 font-semibold">
                 Vídeo Promocional • Recorrido Modernista y Conciertos
@@ -231,10 +231,10 @@ export default async function Home() {
       {/* 4. Introducción Emocional */}
       <section className="py-24 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center scroll-mt-24">
         <span className="text-xs uppercase tracking-widest text-[#C5A059] font-bold block mb-3">
-          Barcelona Modernista
+          La Barcelona Modernista
         </span>
         <h2 className="font-serif text-3xl sm:text-5xl font-bold text-[#800020] mb-8">
-          Barcelona Modernista
+          La Barcelona Modernista
         </h2>
 
         <div className="space-y-6 text-base sm:text-lg text-[#1C1C1C]/80 leading-relaxed text-justify sm:text-center">
@@ -260,31 +260,55 @@ export default async function Home() {
       {/* 5. El Eje Histórico del Viaje */}
       <section className="py-24 bg-white border-y border-[#C5A059]/20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
 
-            {/* Text description */}
-            <div className="space-y-6">
-              <span className="text-xs uppercase tracking-widest text-[#C5A059] font-bold block">
-                V Centenario Imperial
-              </span>
-              <h2 className="font-serif text-3xl sm:text-4xl font-bold text-[#800020]">
-                El Modernismo Catalán y el Universo de Manuel de Falla
-              </h2>
-              <div className="space-y-4 text-sm sm:text-base text-[#1C1C1C]/75 leading-relaxed">
-                <p>
-                  A finales del s. XIX y con una duración aproximada de 30 años, aparece en Cataluña un movimiento con afán de regeneración cultural centrado principalmente en la arquitectura, aunque no sólo en ella. La Exposición Universal de Barcelona que tuvo lugar en 1888, impulsó este movimiento al servir como laboratorio de pruebas para todo lo que vendría después. Dicha exposición, a la cual pertenecen el Monumento a Colón o el Arco del Triunfo, dio lugar a una expresión propia de la actividad artística. Es el Modernismo Catalán.
-                </p>
-                <p>
-                  Antoni Gaudí, Josep Puig i Cadafalch o Lluís Domènech i Montaner, arquitectos; Josep Llimona, Miquel Blay o Enric Clarasó, escultores; o Ramon Casas, Santiago Rusiñol, e incluso el mismo Pablo Picasso, pintores, forman parte de esta corriente que tuvo como uno de sus puntos de encuentro más emblemáticos el café Els Quatre Gats. Un grupo social privilegiado construyó su nuevo edificio en el Eixample como un signo de distinción.
-                </p>
-                <p>
-                  Más entrado ya el s. XX, a nivel musical, Manuel de Falla tuvo una estrecha relación con Barcelona. Una vez finalizada su etapa andaluza, muchas de sus últimas obras se estrenaron aquí: Psyché (Palau de la Música Catalana, 1925), Concerto para clave y cinco instrumentos (Asociación de Música de Cámara -Palau de la Música Catalana-, 1926) o su obra póstuma Atlántida (Gran Teatre del Liceu, 1961, versión de concierto).
-                </p>
-              </div>
+          {/* Header & Text */}
+          <div className="max-w-4xl mx-auto text-center mb-12">
+            <span className="text-xs uppercase tracking-widest text-[#C5A059] font-bold block mb-4">
+              El Modernismo Catalán y el Universo de Manuel de Falla
+            </span>
+            <div className="space-y-4 text-sm sm:text-base text-[#1C1C1C]/75 leading-relaxed text-justify sm:text-center">
+              <p>
+                A finales del s. XIX y con una duración aproximada de 30 años, aparece en Cataluña un movimiento con afán de regeneración cultural centrado principalmente en la arquitectura, aunque no sólo en ella. La Exposición Universal de Barcelona que tuvo lugar en 1888, impulsó este movimiento al servir como laboratorio de pruebas para todo lo que vendría después. Dicha exposición, a la cual pertenecen el Monumento a Colón o el Arco del Triunfo, dio lugar a una expresión propia de la actividad artística. Es el Modernismo Catalán.
+              </p>
+              <p>
+                Antoni Gaudí, Josep Puig i Cadafalch o Lluís Domènech i Montaner, arquitectos; Josep Llimona, Miquel Blay o Enric Clarasó, escultores; o Ramon Casas, Santiago Rusiñol, e incluso el mismo Pablo Picasso, pintores, forman parte de esta corriente que tuvo como uno de sus puntos de encuentro más emblemáticos el café Els Quatre Gats. Un grupo social privilegiado construyó su nuevo edificio en el Eixample como un signo de distinción.
+              </p>
+              <p>
+                Más entrado ya el s. XX, a nivel musical, Manuel de Falla tuvo una estrecha relación con Barcelona. Una vez finalizada su etapa andaluza, muchas de sus últimas obras se estrenaron aquí: Psyché (Palau de la Música Catalana, 1925), Concerto para clave y cinco instrumentos (Asociación de Música de Cámara -Palau de la Música Catalana-, 1926) o su obra póstuma Atlántida (Gran Teatre del Liceu, 1961, versión de concierto).
+              </p>
+            </div>
+          </div>
+
+          {/* Grid Layout: Photos on the left, Video on the right */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-stretch mt-12">
+
+            {/* Gallery (Left Column) */}
+            <div>
+              <PrologoGallery />
             </div>
 
-            {/* Visual aspect */}
-            <PrologoGallery />
+            {/* Video Container (Right Column) */}
+            <div className="flex flex-col justify-center">
+              <div className="bg-white p-2.5 sm:p-3 rounded-xl border border-[#C5A059]/25 shadow-xl shadow-[#800020]/5 hover:shadow-2xl transition duration-500 font-sans w-full">
+                <div className="relative w-full aspect-video rounded-lg overflow-hidden bg-black/5 border border-stone-200">
+                  <video
+                    src="/videos/prologo.mp4"
+                    poster="/imagenes/prologo.jpg"
+                    controls
+                    playsInline
+                    className="w-full h-full object-cover select-none"
+                  />
+                </div>
+                <div className="mt-4 text-center space-y-1 select-none border-t border-[#C5A059]/10 pt-4">
+                  <p className="font-serif italic font-bold text-[#800020] text-sm sm:text-base">
+                    "Resumen Virtual"
+                  </p>
+                  <p className="tracking-widest uppercase text-[9px] sm:text-[10px] text-stone-500 font-semibold">
+                    Resumen Virtual
+                  </p>
+                </div>
+              </div>
+            </div>
 
           </div>
         </div>
@@ -377,7 +401,7 @@ export default async function Home() {
               Atmósfera del Viaje
             </span>
             <h2 className="font-serif text-3xl sm:text-4xl font-bold text-[#800020]">
-              Galería de Diapositivas del Viaje a Barcelona
+              Galería de Diapositivas del Itinerario Viaje a Barcelona
             </h2>
           </div>
 
@@ -670,7 +694,7 @@ export default async function Home() {
             {/* Left brand column */}
             <div className="text-center md:text-left">
               <h3 className="font-serif text-lg font-bold text-[#E9C168]">
-                Barcelona Modernista
+                La Barcelona Modernista
               </h3>
               <p className="text-xs text-white/50 mt-1 max-w-sm">
                 Organizado en exclusividad por el Ciclo de conciertos Manuel de Falla. Acordes de principios del siglo XX bajo la maravillosa luz del modernismo catalán.

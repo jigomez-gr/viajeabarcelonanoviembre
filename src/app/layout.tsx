@@ -17,7 +17,7 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
-  title: "Barcelona Modernista | Viaje de Conciertos Manuel de Falla",
+  title: "La Barcelona Modernista | Viaje de Conciertos Manuel de Falla",
   description: "Viaje de conciertos y modernismo por la Barcelona de principios del siglo XX, recorriendo las obras de Gaudí y Domènech i Montaner.",
 };
 

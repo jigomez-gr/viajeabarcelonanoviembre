@@ -72,7 +72,7 @@ export default function ChatWidget() {
                         <div className="bg-white p-3.5 rounded-xl border border-stone-200 shadow-sm text-xs text-[#1C1C1C]/95 leading-relaxed">
                             <p className="font-serif italic font-bold text-[#800020] mb-1">¡Buenas tardes!</p>
                             <p className="mb-2">
-                                Le damos la bienvenida al portal del viaje exclusivo <strong>Barcelona Modernista</strong>.
+                                Le damos la bienvenida al portal del viaje exclusivo <strong>La Barcelona Modernista</strong>.
                             </p>
                             <p className="text-stone-600">
                                 Para facilitarle asistencia directa o responder cualquier duda, puede solicitar continuar esta conversación en nuestros canales personales de:

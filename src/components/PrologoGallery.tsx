@@ -14,7 +14,7 @@ interface PrologueItem {
 const PROLOGUE_ITEMS: PrologueItem[] = [
     {
         src: "/imagenes/prologo/monumentoacolon0_cieloazul.jpg",
-        title: "Resumen Virtual",
+        title: "Prolegómenos",
         category: "LA BARCELONA MODERNISTA"
     },
     {
@@ -108,7 +108,7 @@ export default function PrologoGallery() {
             {/* Sidebar List of Items (al lado) */}
             <div className="md:col-span-4 flex flex-col h-[400px]">
                 <h4 className="font-serif text-xs uppercase tracking-widest text-[#800020] font-bold mb-3 select-none">
-                    Contenidos del Prólogo
+                    Diapositivas
                 </h4>
                 <div className="flex-1 overflow-y-auto space-y-2 pr-1 custom-scrollbar" style={{ maxHeight: "365px" }}>
                     {PROLOGUE_ITEMS.map((item, idx) => {

@@ -245,7 +245,7 @@ const ITIN_DATA: TimelineDay[] = [
             {
                 time: "10:45 h",
                 title: "La Barcelona de Pablo Picasso",
-                description: "Visita temática por el barrio del Born y acceso exclusivo al relevante Museo Picasso de la calle Montcada.",
+                description: "Visita temática por los rincones que inspiraron la obra del pintor malagueño y acceso al Museo Picasso de Barcelona.",
                 type: "visit",
                 venue: "Museo Picasso Barcelona",
             },

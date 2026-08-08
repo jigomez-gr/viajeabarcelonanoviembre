@@ -120,9 +120,9 @@ const ITIN_DATA: TimelineDay[] = [
                 venue: "Casa Museo Amatller",
             },
             {
-                time: "12:00 h",
+                time: "12:30 h",
                 title: "Visita a Casa Vicens",
-                description: "Descubrimiento de la primera obra maestra residencial de Antoni Gaudí, declarada Patrimonio de la Humanidad.",
+                description: "Primera obra maestra residencial de Antoni Gaudí, declarada Patrimonio de la Humanidad por la UNESCO (2005)",
                 type: "visit",
                 venue: "Casa Vicens",
             },

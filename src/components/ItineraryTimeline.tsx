@@ -152,8 +152,8 @@ const ITIN_DATA: TimelineDay[] = [
         id: 4,
         date: "5 Nov",
         dayName: "Jueves, 5 de noviembre de 2026",
-        title: "El esplendor de Antoni Gaudí. 100 años del Concerto para clave y cinco instrumentos (M. de Falla)",
-        desc: "",
+        title: "El esplendor de Antoni Gaudí.",
+        desc: "Cien años del estreno del Concerto para clave y cinco instrumentos de M. de Falla",
         events: [
             {
                 time: "10:00 h",

@@ -99,7 +99,7 @@ const ITIN_DATA: TimelineDay[] = [
             {
                 time: "19:30 h",
                 title: "Recital: Quartet Gerhard",
-                description: "Concierto exclusivo del destacado cuarteto español interpretando los cuartetos núm. 5, 7 y 8 de Dmitri Shostakovich.",
+                description: "Monográfico de D. Shostakovich a cargo del destacado cuarteto catalán, quienes interpretarán los cuartetos núm. 5, 7 y 8 del compositor ruso.",
                 type: "concert",
                 venue: "Petit Palau",
             },

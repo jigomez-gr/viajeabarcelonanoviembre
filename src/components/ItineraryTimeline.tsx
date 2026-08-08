@@ -170,9 +170,9 @@ const ITIN_DATA: TimelineDay[] = [
                 venue: "Sagrada Familia",
             },
             {
-                time: "13:30 h",
+                time: "14:30 h",
                 title: "Almuerzo en el Palace Barcelona",
-                description: "Almuerzo gourmet en el majestuoso Hall de este hotel histórico, antigua residencia de Salvador Dalí.",
+                description: "Almuerzo gourmet en el majestuoso Hall de este hotel histórico, residencia durante un tiempo de Salvador Dalí.",
                 type: "meal",
                 venue: "Hotel El Palace Barcelona",
             },

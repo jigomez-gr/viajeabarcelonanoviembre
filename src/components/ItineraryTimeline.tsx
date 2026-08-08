@@ -23,8 +23,8 @@ const ITIN_DATA: TimelineDay[] = [
         id: 1,
         date: "2 Nov",
         dayName: "Lunes, 2 de noviembre de 2026",
-        title: "Llegada a Barcelona y Ópera en el Liceu",
-        desc: "Punto de encuentro en Madrid Atocha, viaje en Iryo Infinita y noche lírica con bellini en el Gran Teatre del Liceu",
+        title: "Llegada a Barcelona, traslado al hotel Petit Palace Boquería Garden (4*) y ópera en el Gran Teatre del Liceu",
+        desc: "",
         events: [
             {
                 time: "11:45 h",
@@ -500,9 +500,11 @@ export default function ItineraryTimeline({ videosExist }: ItineraryTimelineProp
                                 <h3 className="font-serif text-xl sm:text-2xl font-bold text-stone-900 mt-1">
                                     {day.title}
                                 </h3>
-                                <p className="text-stone-600 mt-2 text-sm italic leading-relaxed">
-                                    "{day.desc}"
-                                </p>
+                                {day.desc && (
+                                    <p className="text-stone-600 mt-2 text-sm italic leading-relaxed">
+                                        "{day.desc}"
+                                    </p>
+                                )}
                             </div>
 
                             {/* Events Vertical Timeline */}

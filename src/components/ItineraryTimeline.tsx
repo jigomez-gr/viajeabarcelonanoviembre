@@ -229,7 +229,7 @@ const ITIN_DATA: TimelineDay[] = [
             {
                 time: "19:00 h",
                 title: "Gran Concierto: 'Atlántida' de Falla",
-                description: "Asistencia al magno concierto con obras de Debussy (La Mer, La Cathédrale Engloutie) y la cantata escénica póstuma 'Atlántida' de Falla/Halffter, bajo la dirección de Kent Nagano.",
+                description: "Asistencia al concierto de la Orquesta y Coro Nacionales de España, bajo la dirección de Kent Nagano, con obras de C. Debussy y la cantata escénica póstuma 'Atlántida' de M. de Falla/E. Halffter,",
                 type: "concert",
                 venue: "L'Auditori (Sala 1 Pau Casals)",
             },

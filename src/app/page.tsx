@@ -249,11 +249,7 @@ export default async function Home() {
       <section className="py-24 bg-white border-y border-[#C5A059]/20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-          {/* Header & Text */}
           <div className="max-w-4xl mx-auto text-center mb-12">
-            <span className="text-xs uppercase tracking-widest text-[#C5A059] font-bold block mb-4">
-              El Modernismo Catalán y el Universo de Manuel de Falla
-            </span>
             <div className="space-y-4 text-sm sm:text-base text-[#1C1C1C]/75 leading-relaxed text-justify sm:text-center">
               <p>
                 A finales del s. XIX y con una duración aproximada de 30 años, aparece en Cataluña un movimiento con afán de regeneración cultural centrado principalmente en la arquitectura, aunque no sólo en ella. La Exposición Universal de Barcelona que tuvo lugar en 1888, impulsó este movimiento al servir como laboratorio de pruebas para todo lo que vendría después. Dicha exposición, a la cual pertenecen el Monumento a Colón o el Arco del Triunfo, dio lugar a una expresión propia de la actividad artística. Es el Modernismo Catalán.

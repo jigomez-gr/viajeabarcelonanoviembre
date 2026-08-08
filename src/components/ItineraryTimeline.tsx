@@ -239,8 +239,8 @@ const ITIN_DATA: TimelineDay[] = [
         id: 6,
         date: "7 Nov",
         dayName: "Sábado, 7 de noviembre de 2026",
-        title: "El Picasso Joven y Retorno a Madrid",
-        desc: "Las huellas del pintor del siglo XX en Barcelona, almuerzo marinero tradicional y tren de alta velocidad",
+        title: "La Barcelona de Pablo Picasso. Un recorrido que sigue los pasos del artista más influyente del siglo XX. Viaje de vuelta a Madrid.",
+        desc: "",
         events: [
             {
                 time: "10:45 h",

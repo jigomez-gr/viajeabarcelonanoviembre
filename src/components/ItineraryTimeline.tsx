@@ -142,7 +142,7 @@ const ITIN_DATA: TimelineDay[] = [
             {
                 time: "19:30 h",
                 title: "Messa da Réquiem de Giuseppe Verdi",
-                description: "Interpretación sinfónico-coral del Réquiem de Verdi dirigida por Nicola Luisotti, con Lise Davidsen y Freddie De Tomasso.",
+                description: "Interpretación del Réquiem de Verdi a cargo de la Orquesta y Coro del Gran Teatre del Liceu, dirigidos por Nicola Luisotti.\n\nLise Davidsen, soprano\nAigul Akhmetshina, mezzosoprano\nFreddie de Tomasso, tenor\nChristian Van Horn, bajo",
                 type: "concert",
                 venue: "Gran Teatre del Liceu",
             },
@@ -568,7 +568,7 @@ export default function ItineraryTimeline({ videosExist }: ItineraryTimelineProp
                                                 {evt.title}
                                             </h4>
 
-                                            <p className="text-xs text-[#1C1C1C]/80 leading-relaxed">
+                                            <p className="text-xs text-[#1C1C1C]/80 leading-relaxed whitespace-pre-wrap">
                                                 {evt.description}
                                             </p>
                                         </div>

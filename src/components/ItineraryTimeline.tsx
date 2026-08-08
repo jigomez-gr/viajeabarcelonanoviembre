@@ -215,7 +215,7 @@ const ITIN_DATA: TimelineDay[] = [
             {
                 time: "13:30 h",
                 title: "Almuerzo en Restaurante Gaudim",
-                description: "Menú especial de cocina catalana de autor en el corazón del Eixample.",
+                description: "Restaurante especializado en cocina catalana, en el corazón del Eixample.",
                 type: "meal",
                 venue: "Restaurante Gaudim",
             },

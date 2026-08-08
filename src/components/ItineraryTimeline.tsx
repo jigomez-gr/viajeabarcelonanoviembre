@@ -163,9 +163,9 @@ const ITIN_DATA: TimelineDay[] = [
                 venue: "Park Güell",
             },
             {
-                time: "11:30 h",
+                time: "12:00 h",
                 title: "Basílica de la Sagrada Familia",
-                description: "Visita monumental al interior y detalles de la gran obra inacabada e inspiradora de Gaudí.",
+                description: "Visita guiada al interior y detalles de la gran obra inacabada e inspiradora del maestro catalán.",
                 type: "visit",
                 venue: "Sagrada Familia",
             },

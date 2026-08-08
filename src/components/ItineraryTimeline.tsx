@@ -156,7 +156,7 @@ const ITIN_DATA: TimelineDay[] = [
         desc: "",
         events: [
             {
-                time: "09:15 h",
+                time: "10:00 h",
                 title: "Visita al Park Güell",
                 description: "Paseo matinal guiado entre naturaleza y la arquitectura de A. Gaudí.",
                 type: "visit",

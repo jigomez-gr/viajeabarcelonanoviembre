@@ -258,8 +258,8 @@ const ITIN_DATA: TimelineDay[] = [
             },
             {
                 time: "17:45 h",
-                title: "Traslado a la Estación Sants",
-                description: "Salida del hotel para retornar con el equipaje a la correspondencia de alta velocidad.",
+                title: "Traslado a la Estación Sants para coger el tren de vuelta a Madrid",
+                description: "",
                 type: "transport",
             },
             {

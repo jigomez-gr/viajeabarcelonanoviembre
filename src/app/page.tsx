@@ -310,11 +310,8 @@ export default async function Home() {
               Programa Oficial
             </span>
             <h2 className="font-serif text-3xl sm:text-5xl font-bold text-[#800020]">
-              El Itinerario Musical Detallado
+              Itinerario Detallado
             </h2>
-            <p className="text-sm text-[#1C1C1C]/60 mt-3 max-w-xl mx-auto">
-              Descubra la planificación meticulosa del viaje, con horarios reales y accesos exclusivos.
-            </p>
           </div>
 
           <ItineraryTimeline videosExist={videosExist} />

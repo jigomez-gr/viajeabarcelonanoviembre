@@ -36,7 +36,7 @@ const ITIN_DATA: TimelineDay[] = [
             {
                 time: "12:22 h",
                 title: "Salida del Tren IRYO",
-                description: "Viaje de alta velocidad hacia el noreste peninsular. Menú bistró incluido a bordo.",
+                description: "Viaje en alta velocidad a Barcelona (pequeño menú incluido a bordo)",
                 type: "transport",
             },
             {

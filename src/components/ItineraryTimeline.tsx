@@ -206,7 +206,7 @@ const ITIN_DATA: TimelineDay[] = [
                 venue: "Museo de la Música (L'Auditori)",
             },
             {
-                time: "11:30 h",
+                time: "12:00 h",
                 title: "Visita a Casa Batlló",
                 description: "Descubrimiento interactivo y único de la poética fachada y los salones ondulados de Gaudí.",
                 type: "visit",

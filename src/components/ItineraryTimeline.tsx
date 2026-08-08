@@ -195,8 +195,8 @@ const ITIN_DATA: TimelineDay[] = [
         id: 5,
         date: "6 Nov",
         dayName: "Viernes, 6 de noviembre de 2026",
-        title: "Casa Batlló, Museo de la Música y Atlántida de Falla",
-        desc: "Una inmersión instrumental por la mañana, la Casa de lo Inesperado de Gaudí y la gala sinfónico-coral en L'Auditori",
+        title: "Museo de la Música, Casa Batlló y La Atlántida de M. de Falla.",
+        desc: "",
         events: [
             {
                 time: "09:30 h",

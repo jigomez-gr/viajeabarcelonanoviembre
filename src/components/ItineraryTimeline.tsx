@@ -70,9 +70,9 @@ const ITIN_DATA: TimelineDay[] = [
         desc: "",
         events: [
             {
-                time: "09:30 h",
+                time: "10:00 h",
                 title: "Visita al Recinto Modernista de Sant Pau",
-                description: "Recorrido por el mayor conjunto modernista del mundo, joya de Lluís Domènech i Montaner.",
+                description: "Recorrido guiado por el mayor conjunto modernista del mundo, diseñado por Lluís Domènech i Montaner.",
                 type: "visit",
                 venue: "Recinto Modernista de Sant Pau",
             },

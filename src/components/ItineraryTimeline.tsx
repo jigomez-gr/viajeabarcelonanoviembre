@@ -113,9 +113,9 @@ const ITIN_DATA: TimelineDay[] = [
         desc: "",
         events: [
             {
-                time: "09:30 h",
+                time: "10:00 h",
                 title: "Visita a la Casa Museo Amatller",
-                description: "Recorrido por la genial obra de Josep Puig i Cadafalch, residencia de la familia chocolatera Amatller.",
+                description: "Visita privada a la Casa Amatller. Situada en pleno Paseo de Gràçia, y perteneciente a la familia de chocolateros Amatller, fue remodelada por el arquitecto Josep Puig i Cadafalch.",
                 type: "visit",
                 venue: "Casa Museo Amatller",
             },

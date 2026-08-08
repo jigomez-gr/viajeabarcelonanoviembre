@@ -265,9 +265,9 @@ const ITIN_DATA: TimelineDay[] = [
             {
                 time: "18:53 h",
                 title: "Tren de retorno IRYO a Madrid",
-                description: "Regreso a Madrid de nuevo en clase Infinita. Llegada programada a Madrid Puerta de Atocha a las 22:10 h y fin de servicios.",
+                description: "Regreso en tren Iryo, clase Infinita. Llegada a la Estación Puerta de Atocha-Almudena Grandes de Madrid a las 22:10 h. Fin de nuestros servicios.",
                 type: "transport",
-                venue: "Tren IRYO / Madrid Atocha",
+                venue: "Tren IRYO / Estación Puerta de Atocha - Almudena Grandes.",
             },
         ],
     },

@@ -41,7 +41,7 @@ const ITIN_DATA: TimelineDay[] = [
             },
             {
                 time: "15:39 h",
-                title: "Llegada a Barcelona-Sants y Traslado",
+                title: "Llegada a Sants Estació de Barcelona.",
                 description: "Traslado al hotel Petit Palace Boquería Garden 4*.",
                 type: "visit",
                 venue: "Estación Barcelona-Sants / Hotel",

@@ -243,15 +243,6 @@ export default async function Home() {
           </p>
         </div>
 
-        <blockquote className="mt-12 p-8 border border-[#E9C168] bg-[#E9C168]/5 rounded-xl text-left relative overflow-hidden">
-          <span className="absolute -top-10 -left-6 font-serif text-[180px] text-[#E9C168]/15 leading-none select-none">“</span>
-          <p className="font-serif italic text-lg sm:text-xl text-[#800020] relative z-10">
-            El Palau de la Música de Barcelona es uno de los pocos templos en el mundo donde la arquitectura y el sonido son una misma obra de arte.
-          </p>
-          <cite className="block text-xs uppercase tracking-wider text-[#C5A059] font-bold mt-4 font-sans not-italic">
-            — Antoni Gaudí, Arquitecto
-          </cite>
-        </blockquote>
       </section>
 
       {/* 5. El Eje Histórico del Viaje */}

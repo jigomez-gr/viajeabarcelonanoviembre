@@ -152,8 +152,8 @@ const ITIN_DATA: TimelineDay[] = [
         id: 4,
         date: "5 Nov",
         dayName: "Jueves, 5 de noviembre de 2026",
-        title: "Gaudí Onírico, Sagrada Familia y Falla Barroco",
-        desc: "El diálogo eterno del Park Güell y la Basílica de la Sagrada Familia, almuerzo señorial y el Falla póstumo de cámara",
+        title: "El esplendor de Antoni Gaudí. 100 años del Concerto para clave y cinco instrumentos (M. de Falla)",
+        desc: "",
         events: [
             {
                 time: "09:15 h",

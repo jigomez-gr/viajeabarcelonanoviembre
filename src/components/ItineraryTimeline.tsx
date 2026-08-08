@@ -213,7 +213,7 @@ const ITIN_DATA: TimelineDay[] = [
                 venue: "Casa Batlló",
             },
             {
-                time: "13:30 h",
+                time: "14:00 h",
                 title: "Almuerzo en Restaurante Gaudim",
                 description: "Restaurante especializado en cocina catalana, en el corazón del Eixample.",
                 type: "meal",

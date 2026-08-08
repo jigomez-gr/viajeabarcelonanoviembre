@@ -93,7 +93,7 @@ const ITIN_DATA: TimelineDay[] = [
             {
                 time: "19:00 h",
                 title: "Regreso al Palau de la Música",
-                description: "Acceso a la sala de cámara del Petit Palau para el recital de la tarde.",
+                description: "Acceso a la sala de cámara (Petit Palau)",
                 type: "transport",
             },
             {

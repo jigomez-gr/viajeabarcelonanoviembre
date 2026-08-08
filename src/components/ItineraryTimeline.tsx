@@ -221,8 +221,8 @@ const ITIN_DATA: TimelineDay[] = [
             },
             {
                 time: "18:15 h",
-                title: "Traslado a L'Auditori",
-                description: "Regreso a L'Auditori a las salas de concierto para la gran gala sinfónica.",
+                title: "Regreso a L'Auditori",
+                description: "Traslado a la gran gala sinfónica Pau Casals de L'Auditori.",
                 type: "transport",
                 venue: "L'Auditori",
             },

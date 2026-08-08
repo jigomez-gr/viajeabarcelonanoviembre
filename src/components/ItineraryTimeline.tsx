@@ -56,7 +56,7 @@ const ITIN_DATA: TimelineDay[] = [
             {
                 time: "19:30 h",
                 title: "Ópera: 'I Capuleti e i Montecchi'",
-                description: "Asistencia al drama lírico de V. Bellini en una aclamada producción de Allex Aguilera, con Lisette Oropesa y Rafaella Lupinacci. Dirigida por Riccardo Frizza.",
+                description: "Asistencia al drama lírico de V. Bellini, en una producción de Allex Aguilera, con Lisette Oropesa y Rafaella Lupinacci. Orquesta Sinfónica del Gran Teatre del Liceu dirigida por Riccardo Frizza.",
                 type: "concert",
                 venue: "Gran Teatre del Liceu",
             },

@@ -132,7 +132,7 @@ export default async function Home() {
             LA BARCELONA MODERNISTA
           </h1>
 
-          <p className="font-serif text-xs sm:text-sm text-stone-400 max-w-4xl mb-4 sm:mb-5 italic tracking-wide mt-1">
+          <p className="font-serif text-lg sm:text-xl text-stone-400 max-w-4xl mb-4 sm:mb-5 italic tracking-wide mt-1">
             (2 de Noviembre — 7 de Noviembre de 2026)
           </p>
 

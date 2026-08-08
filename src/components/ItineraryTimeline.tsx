@@ -77,9 +77,9 @@ const ITIN_DATA: TimelineDay[] = [
                 venue: "Recinto Modernista de Sant Pau",
             },
             {
-                time: "11:30 h",
+                time: "12:30 h",
                 title: "Palau de la Música Catalana",
-                description: "Visita guiada a una de las salas de conciertos con luz natural más espectaculares del planeta.",
+                description: "Visita guiada a la emblemática sala de conciertos, sede del Orfeó Catalá.",
                 type: "visit",
                 venue: "Palau de la Música Catalana",
             },

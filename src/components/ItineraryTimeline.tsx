@@ -23,7 +23,7 @@ const ITIN_DATA: TimelineDay[] = [
         id: 1,
         date: "2 Nov",
         dayName: "Lunes, 2 de noviembre de 2026",
-        title: "Llegada a Barcelona, traslado al hotel Petit Palace Boquería Garden (4*) y ópera en el Gran Teatre del Liceu",
+        title: "Llegada a Barcelona, traslado al hotel Petit Palace Boquería Garden y ópera en el Gran Teatre del Liceu",
         desc: "",
         events: [
             {

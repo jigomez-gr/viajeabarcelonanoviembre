@@ -127,7 +127,7 @@ const ITIN_DATA: TimelineDay[] = [
                 venue: "Casa Vicens",
             },
             {
-                time: "13:30 h",
+                time: "14:30 h",
                 title: "Almuerzo en Lincoln 32 Restaurant",
                 description: "Cocina creativa y tradicional en el cálido espacio gastronómico del Lincoln 32.",
                 type: "meal",

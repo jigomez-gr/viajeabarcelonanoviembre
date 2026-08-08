@@ -145,7 +145,7 @@ export default async function Home() {
                 "La Barcelona Modernista"
               </p>
               <p className="tracking-widest uppercase text-[9px] sm:text-[10px] text-stone-500 font-semibold">
-                Vídeo Promocional • Recorrido Modernista y Conciertos
+                Vídeo Promocional
               </p>
               <p className="text-[9px] text-stone-400">
                 Copyright © Ciclo de Conciertos Manuel de Falla. Todos los derechos reservados.

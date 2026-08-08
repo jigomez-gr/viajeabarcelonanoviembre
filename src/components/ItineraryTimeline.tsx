@@ -250,9 +250,9 @@ const ITIN_DATA: TimelineDay[] = [
                 venue: "Museo Picasso Barcelona",
             },
             {
-                time: "13:30 h",
-                title: "Almuerzo de Clausura en Cadaqués",
-                description: "Almuerzo de despedida y sabor mediterráneo frente a los fogones arroceros tradicionales de Cadaqués.",
+                time: "14:30 h",
+                title: "Almuerzo en Cadaqués Restaurante",
+                description: "Comida de despedida y sabor mediterráneo frente a los fogones arroceros tradicionales.",
                 type: "meal",
                 venue: "Cadaqués Restaurante",
             },

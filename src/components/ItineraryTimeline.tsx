@@ -66,8 +66,8 @@ const ITIN_DATA: TimelineDay[] = [
         id: 2,
         date: "3 Nov",
         dayName: "Martes, 3 de noviembre de 2026",
-        title: "Domènech i Montaner y Quartet Gerhard",
-        desc: "El esplendor modernista del Hospital de Sant Pau y el Palau de la Música Catalana seguido de un recital de cuerda",
+        title: "Día dedicado al arquitecto Lluís Domènech i Montaner. Monográfico de D. Shostakovich a cargo del Quartet Gerhard.",
+        desc: "",
         events: [
             {
                 time: "09:30 h",

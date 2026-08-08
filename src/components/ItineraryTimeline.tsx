@@ -110,7 +110,7 @@ const ITIN_DATA: TimelineDay[] = [
         date: "4 Nov",
         dayName: "Miércoles, 4 de noviembre de 2026",
         title: "Casa Amatller, Casa Vicens y Réquiem de Verdi",
-        desc: "Las primeras obras del modernismo en Paseo de Gràcia y Gràcia, almuerzo gourmet y una noche lírica monumental",
+        desc: "",
         events: [
             {
                 time: "09:30 h",

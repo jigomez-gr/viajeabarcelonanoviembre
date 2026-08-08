@@ -199,9 +199,9 @@ const ITIN_DATA: TimelineDay[] = [
         desc: "",
         events: [
             {
-                time: "09:30 h",
+                time: "10:00 h",
                 title: "Museo de la Música de Barcelona",
-                description: "Visita guiada a la fantástica colección de instrumentos y patrimonio de L'Auditori.",
+                description: "Visita guiada a la fantástica colección de instrumentos y patrimonio musical de Barcelona.",
                 type: "visit",
                 venue: "Museo de la Música (L'Auditori)",
             },

@@ -136,7 +136,7 @@ const ITIN_DATA: TimelineDay[] = [
             {
                 time: "19:00 h",
                 title: "Traslado al Gran Teatre del Liceu",
-                description: "Traslado para asistir a uno de los acontecimientos líricos de la temporada.",
+                description: "De nuevo traslado a pie al Gran Teatre del Liceu.",
                 type: "transport",
             },
             {

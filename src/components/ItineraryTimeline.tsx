@@ -184,8 +184,8 @@ const ITIN_DATA: TimelineDay[] = [
             },
             {
                 time: "20:00 h",
-                title: "Recital: Manuel de Falla y el Clave",
-                description: "Concierto póstumo 'Concerto para clave y cinco instrumentos' de Falla, junto a obras de Bach, Sánchez-Verdú y Scarlatti. Por Benjamin Alard (clave/director) y solistas de viento.",
+                title: "Recital.",
+                description: "100 años del estreno en esta misma sala del 'Concerto para clave y cinco instrumentos' de M. de Falla, junto a obras de J. S. Bach, J. M. Sánchez-Verdú o D. Scarlatti, entre otros.\n\nBenjamin Alard (clave/dirección)",
                 type: "concert",
                 venue: "Palau de la Música Catalana",
             },

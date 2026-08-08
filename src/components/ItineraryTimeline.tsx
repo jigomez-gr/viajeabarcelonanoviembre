@@ -49,7 +49,7 @@ const ITIN_DATA: TimelineDay[] = [
             {
                 time: "19:00 h",
                 title: "Gran Teatre del Liceu",
-                description: "Traslado a pie al emblemático teatro de ópera de Barcelona en Las Ramblas.",
+                description: "Paseo hasta el emblemático teatro de ópera de Barcelona situado en las Ramblas.",
                 type: "transport",
                 venue: "Gran Teatre del Liceu",
             },

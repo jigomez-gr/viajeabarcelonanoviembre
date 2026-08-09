@@ -28,10 +28,10 @@ const ITIN_DATA: TimelineDay[] = [
         events: [
             {
                 time: "11:45 h",
-                title: "Encuentro en Madrid Atocha",
+                title: "Encuentro en Madrid - Atocha",
                 description: "Punto de encuentro en la Estación Puerta de Atocha - Almudena Grandes de Madrid para tomar el tren IRYO (Clase Infinita Bistró).",
                 type: "transport",
-                venue: "Estación de Puerta de Atocha, Madrid",
+                venue: "Estación Puerta de Atocha, Madrid",
             },
             {
                 time: "12:22 h",

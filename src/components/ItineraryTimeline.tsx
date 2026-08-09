@@ -185,7 +185,7 @@ const ITIN_DATA: TimelineDay[] = [
             {
                 time: "20:00 h",
                 title: "Recital.",
-                description: "100 años del estreno en esta misma sala del 'Concerto para clave y cinco instrumentos' de M. de Falla, junto a obras de J. S. Bach, J. M. Sánchez-Verdú o D. Scarlatti, entre otros.\n\nBenjamin Alard (clave y dirección musical)",
+                description: "100 años del estreno, en esta misma sala, del 'Concerto para clave y cinco instrumentos' de M. de Falla, el cual se interpretará junto a obras de J. S. Bach, J. M. Sánchez-Verdú o D. Scarlatti, entre otros.\n\nBenjamin Alard (clave y dirección musical)",
                 type: "concert",
                 venue: "Palau de la Música Catalana",
             },

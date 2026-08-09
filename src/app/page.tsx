@@ -226,23 +226,13 @@ export default async function Home() {
       </section>
 
       {/* 4. Introducción Emocional */}
-      <section className="py-24 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center scroll-mt-24">
+      <section className="py-16 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center scroll-mt-24">
         <span className="text-xs uppercase tracking-widest text-[#C5A059] font-bold block mb-3">
           La Barcelona Modernista
         </span>
-        <h2 className="font-serif text-3xl sm:text-5xl font-bold text-[#800020] mb-8">
+        <h2 className="font-serif text-3xl sm:text-5xl font-bold text-[#800020]">
           La Barcelona Modernista
         </h2>
-
-        <div className="space-y-6 text-base sm:text-lg text-[#1C1C1C]/80 leading-relaxed text-justify sm:text-center">
-          <p>
-            Si hay una ciudad vinculada al Modernismo y a la renovación musical de principios del siglo XX, ésa es Barcelona. Su Recinto Modernista de Sant Pau, el Palau de la Música Catalana y la singular Casa Vicens son testimonios excepcionales de una época de esplendor sin precedentes en Cataluña.
-          </p>
-          <p>
-            Y fue en Barcelona donde Manuel de Falla estrechó importantes lazos artísticos, colaborando estrechamente en el estreno de obras clave y compartiendo el auge cultural catalán. El festival destaca este extraordinario vínculo cultural en el marco inigualable de salas diseñadas por Domènech i Montaner y Antoni Gaudí.
-          </p>
-        </div>
-
       </section>
 
       {/* 5. El Eje Histórico del Viaje */}

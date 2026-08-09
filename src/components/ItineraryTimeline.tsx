@@ -195,7 +195,7 @@ const ITIN_DATA: TimelineDay[] = [
         id: 5,
         date: "6 Nov",
         dayName: "Viernes, 6 de noviembre de 2026",
-        title: "Museo de la Música, Casa Batlló y La Atlántida de M. de Falla.",
+        title: "Museo de la Música, Casa Batlló y Atlántida de M. de Falla.",
         desc: "",
         events: [
             {

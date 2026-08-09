@@ -152,8 +152,8 @@ const ITIN_DATA: TimelineDay[] = [
         id: 4,
         date: "5 Nov",
         dayName: "Jueves, 5 de noviembre de 2026",
-        title: "El esplendor de Antoni Gaudí.",
-        desc: "Cien años del estreno del Concerto para clave y cinco instrumentos de M. de Falla",
+        title: "El esplendor de Antoni Gaudí.\n\"Cien años del estreno del Concerto para clave y cinco instrumentos de M. de Falla\"",
+        desc: "",
         events: [
             {
                 time: "10:00 h",
@@ -497,7 +497,7 @@ export default function ItineraryTimeline({ videosExist }: ItineraryTimelineProp
                                 <span className="text-[#C5A059] font-serif italic text-sm uppercase tracking-wider block">
                                     {day.dayName}
                                 </span>
-                                <h3 className="font-serif text-xl sm:text-2xl font-bold text-stone-900 mt-1">
+                                <h3 className="font-serif text-xl sm:text-2xl font-bold text-stone-900 mt-1 whitespace-pre-wrap">
                                     {day.title}
                                 </h3>
                                 {day.desc && (

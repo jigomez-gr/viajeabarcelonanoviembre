@@ -84,7 +84,7 @@ const ITIN_DATA: TimelineDay[] = [
                 venue: "Palau de la Música Catalana",
             },
             {
-                time: "13:30 h",
+                time: "14:30 h",
                 title: "Almuerzo en Restaurante El Cercle",
                 description: "Almuerzo en un magnífico espacio rodeado de arte y cultura en el centro de Barcelona.",
                 type: "meal",

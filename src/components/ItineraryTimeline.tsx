@@ -121,8 +121,8 @@ const ITIN_DATA: TimelineDay[] = [
             },
             {
                 time: "12:30 h",
-                title: "Visita a Casa Vicens",
-                description: "Primera obra maestra residencial de Antoni Gaudí, declarada Patrimonio de la Humanidad por la UNESCO (2005)",
+                title: "Visita a la Casa Vicens",
+                description: "Visita guiada a la Casa Vicens, primera obra maestra de Antoni Gaudí, declarada Patrimonio de la Humanidad por la UNESCO (2005)",
                 type: "visit",
                 venue: "Casa Vicens",
             },

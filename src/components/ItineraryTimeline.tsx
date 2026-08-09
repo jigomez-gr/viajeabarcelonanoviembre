@@ -207,7 +207,7 @@ const ITIN_DATA: TimelineDay[] = [
             },
             {
                 time: "12:00 h",
-                title: "Visita a Casa Batlló",
+                title: "Visita a la Casa Batlló",
                 description: "Descubrimiento interactivo y único de la poética fachada y los salones ondulados de Gaudí.",
                 type: "visit",
                 venue: "Casa Batlló",

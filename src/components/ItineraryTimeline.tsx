@@ -152,7 +152,7 @@ const ITIN_DATA: TimelineDay[] = [
         id: 4,
         date: "5 Nov",
         dayName: "Jueves, 5 de noviembre de 2026",
-        title: "El esplendor de Antoni Gaudí.\n\"Cien años del estreno del Concerto para clave y cinco instrumentos de M. de Falla\"",
+        title: "El esplendor de Antoni Gaudí.\nCien años del estreno del Concerto para clave y cinco instrumentos de M. de Falla",
         desc: "",
         events: [
             {
@@ -264,7 +264,7 @@ const ITIN_DATA: TimelineDay[] = [
             },
             {
                 time: "18:53 h",
-                title: "Tren de retorno IRYO a Madrid",
+                title: "Tren IRYO de retorno a Madrid",
                 description: "Regreso en tren Iryo, clase Infinita. Llegada a la Estación Puerta de Atocha-Almudena Grandes de Madrid a las 22:10 h. Fin de nuestros servicios.",
                 type: "transport",
                 venue: "Tren IRYO / Estación Puerta de Atocha - Almudena Grandes.",

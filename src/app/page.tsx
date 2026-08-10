@@ -194,7 +194,7 @@ export default async function Home() {
             {/* Card 2 */}
             <div className="bg-[#FAF9F6] p-5 rounded-lg border border-[#C5A059]/20 text-center hover:shadow-md transition">
               <span className="block text-xl font-serif font-bold text-[#800020] mb-2 leading-none">Petit Palace</span>
-              <span className="block text-xs uppercase tracking-widest text-[#1C1C1C]/60 font-semibold">Boquerie Garden</span>
+              <span className="block text-xs uppercase tracking-widest text-[#1C1C1C]/60 font-semibold">Boquería Garden</span>
             </div>
 
             {/* Card 3 */}
@@ -226,7 +226,7 @@ export default async function Home() {
       </section>
 
       {/* 4. Introducción Emocional */}
-      <section className="py-16 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center scroll-mt-24">
+      <section className="pt-16 pb-4 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center scroll-mt-24">
         <span className="text-xs uppercase tracking-widest text-[#C5A059] font-bold block mb-3">
           La Barcelona Modernista
         </span>
@@ -236,7 +236,7 @@ export default async function Home() {
       </section>
 
       {/* 5. El Eje Histórico del Viaje */}
-      <section className="py-24 bg-white border-y border-[#C5A059]/20">
+      <section className="pt-12 pb-24 bg-white border-y border-[#C5A059]/20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
           <div className="max-w-4xl mx-auto text-center mb-12">

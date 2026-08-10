@@ -799,9 +799,6 @@ export default function ItineraryTimeline({ videosExist }: ItineraryTimelineProp
                                     <p className="font-serif italic font-bold text-[#800020] text-[11px]">
                                         "{thumb.caption}"
                                     </p>
-                                    <p className="text-[9px] text-stone-400 mt-0.5">
-                                        Archivo Documental Manuel de Falla. Todos los derechos reservados.
-                                    </p>
                                 </div>
                             </div>
                         </div>

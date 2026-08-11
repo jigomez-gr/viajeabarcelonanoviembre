@@ -288,7 +288,7 @@ interface ItineraryTimelineProps {
 const DAY_THUMBNAILS: { [key: number]: { src: string; caption: string } } = {
     1: {
         src: "https://images.unsplash.com/photo-1583422409516-2895a77efedd?q=80&w=800&auto=format&fit=crop",
-        caption: "Gran Teatre del Liceu en La Rambla, Barcelona - Llegada y Ópera"
+        caption: "Gran Teatre del Liceu - Llegada y Ópera"
     },
     2: {
         src: "https://images.unsplash.com/photo-1620843245451-b0db36605e55?q=80&w=800&auto=format&fit=crop",

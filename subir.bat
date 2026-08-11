@@ -1,106 +1,123 @@
 @echo off
 chcp 65001 >nul
-setlocal
-
-rem ============================================================
-rem SUBIR VIAJE A BARCELONA A GITHUB
-rem Git + Git LFS
-rem ============================================================
+setlocal EnableExtensions
 
 cd /d "%~dp0"
 
-echo.
 echo ============================================
-echo   Subir cambios a GitHub
+echo   SUBIR CAMBIOS A GITHUB
 echo   viajeabarcelonanoviembre
 echo ============================================
 echo.
 
-rem ------------------------------------------------------------
-rem 1. Comprobar repositorio Git
-rem ------------------------------------------------------------
+REM ============================================================
+REM 1. COMPROBAR GIT
+REM ============================================================
 
-if not exist .git (
-    echo [INFO] Inicializando repositorio Git local...
-    git init -b main
-
-    echo [INFO] Agregando repositorio remoto...
-    git remote add origin https://github.com/jigomez-gr/viajeabarcelonanoviembre.git
-)
-
-rem ------------------------------------------------------------
-rem 2. Comprobar Git LFS
-rem ------------------------------------------------------------
-
-git lfs version >nul 2>&1
-
+git rev-parse --is-inside-work-tree >nul 2>&1
 if errorlevel 1 (
-    echo.
-    echo [ERROR] Git LFS no esta instalado.
-    echo No se subira nada.
-    echo.
-    pause
+    echo [ERROR] Esta carpeta no es un repositorio Git.
     exit /b 1
 )
 
-rem Activar Git LFS
+REM ============================================================
+REM 2. COMPROBAR GIT LFS
+REM ============================================================
+
+git lfs version >nul 2>&1
+if errorlevel 1 (
+    echo [ERROR] Git LFS no esta instalado.
+    exit /b 2
+)
+
 git lfs install >nul 2>&1
 
-echo [OK] Git LFS disponible.
+REM ============================================================
+REM 3. COMPROBAR QUE MP4 USA LFS
+REM ============================================================
+
+for /f "tokens=3" %%A in ('git check-attr filter -- public/videos/itinerario-4.mp4') do (
+    if /I not "%%A"=="lfs" (
+        echo [ERROR] Los MP4 no estan configurados correctamente para Git LFS.
+        echo.
+        git check-attr filter -- public/videos/itinerario-4.mp4
+        echo.
+        echo Revisa .gitattributes.
+        exit /b 3
+    )
+)
+
+echo [OK] Git LFS configurado.
 echo.
 
-rem ------------------------------------------------------------
-rem IMPORTANTE:
-rem NO ejecutamos git lfs migrate.
-rem La migracion ya se hizo y NO debe repetirse.
-rem ------------------------------------------------------------
+REM ============================================================
+REM 4. MOSTRAR CAMBIOS
+REM ============================================================
 
 echo Cambios detectados:
 echo.
 git status -s
 echo.
 
-rem ------------------------------------------------------------
-rem 3. Preguntar mensaje
-rem ------------------------------------------------------------
+REM ============================================================
+REM 5. MENSAJE DEL COMMIT
+REM
+REM Si un agente llama:
+REM subir.bat "Cambio realizado por agente"
+REM
+REM Si no se pasa mensaje, crea uno automatico.
+REM ============================================================
 
-set /p MSG="Describe brevemente el cambio (Enter para mensaje automatico): "
+set "MSG=%~1"
 
-if "%MSG%"=="" set MSG=Actualizacion del %date% %time%
+if "%MSG%"=="" (
+    set "MSG=Actualizacion automatica"
+)
 
-rem ------------------------------------------------------------
-rem 4. Añadir cambios
-rem Git LFS se encarga automaticamente de los MP4 configurados
-rem en .gitattributes
-rem ------------------------------------------------------------
-
+echo Mensaje:
+echo %MSG%
 echo.
+
+REM ============================================================
+REM 6. AÑADIR CAMBIOS
+REM ============================================================
+
 echo Anadiendo cambios...
 git add -A
 
 if errorlevel 1 (
-    echo.
-    echo [ERROR] No se pudieron preparar los cambios.
-    pause
-    exit /b 1
+    echo [ERROR] git add ha fallado.
+    exit /b 4
 )
 
-rem ------------------------------------------------------------
-rem 5. Comprobar si realmente hay algo que guardar
-rem ------------------------------------------------------------
+REM ============================================================
+REM 7. COMPROBAR QUE NO HAY MP4 GRANDES GUARDADOS DIRECTAMENTE
+REM ============================================================
+
+echo Comprobando Git LFS...
+
+git lfs status
+
+if errorlevel 1 (
+    echo [ERROR] Error comprobando Git LFS.
+    exit /b 5
+)
+
+REM ============================================================
+REM 8. SI NO HAY CAMBIOS, NO HACER COMMIT
+REM ============================================================
 
 git diff --cached --quiet
 
 if not errorlevel 1 (
     echo.
-    echo No hay cambios nuevos para crear un commit.
-    echo.
-    goto SUBIR
+    echo [INFO] No hay cambios nuevos para guardar.
+    goto COMPROBAR_REMOTO
 )
 
-rem ------------------------------------------------------------
-rem 6. Commit
-rem ------------------------------------------------------------
+REM ============================================================
+REM 9. CREAR COMMIT
+REM ============================================================
 
 echo.
 echo Creando commit...
@@ -108,84 +125,70 @@ echo Creando commit...
 git commit -m "%MSG%"
 
 if errorlevel 1 (
-    echo.
     echo [ERROR] No se pudo crear el commit.
-    pause
-    exit /b 1
+    exit /b 6
 )
 
-rem ------------------------------------------------------------
-rem 7. Consultar GitHub SIN mezclar nada
-rem ------------------------------------------------------------
+REM ============================================================
+REM 10. COMPROBAR REMOTO SIN HACER PULL AUTOMATICO
+REM ============================================================
 
-:SUBIR
+:COMPROBAR_REMOTO
 
 echo.
 echo Comprobando GitHub...
+
 git fetch origin
 
 if errorlevel 1 (
-    echo.
-    echo [ERROR] No se pudo consultar GitHub.
-    pause
-    exit /b 1
+    echo [ERROR] No se pudo acceder a GitHub.
+    exit /b 7
 )
 
-rem ------------------------------------------------------------
-rem 8. Comprobar si GitHub tiene commits nuevos
-rem ------------------------------------------------------------
+REM Si origin/main contiene commits que main local no tiene,
+REM se detiene. No hacemos pull/rebase automaticamente.
 
 git merge-base --is-ancestor origin/main main >nul 2>&1
 
 if errorlevel 1 (
     echo.
     echo ============================================
-    echo   ATENCION
+    echo [ERROR] GITHUB TIENE CAMBIOS NUEVOS
     echo ============================================
     echo.
-    echo GitHub contiene cambios que esta copia local
-    echo no tiene.
+    echo No se hace pull ni rebase automaticamente.
+    echo Se detiene para evitar conflictos.
     echo.
-    echo NO voy a ejecutar pull ni rebase automaticamente.
-    echo Asi evitamos conflictos y problemas con Git LFS.
-    echo.
-    echo Consulta antes de continuar.
-    echo.
-    pause
-    exit /b 1
+    exit /b 8
 )
 
-rem ------------------------------------------------------------
-rem 9. Subir
-rem ------------------------------------------------------------
+REM ============================================================
+REM 11. PUSH
+REM ============================================================
 
 echo.
 echo Subiendo a GitHub...
 echo.
 
-git push -u origin main
+git push origin main
 
 if errorlevel 1 (
     echo.
-    echo ============================================
-    echo   ERROR AL SUBIR
-    echo ============================================
-    echo.
-    echo No se ha modificado tu copia local.
-    echo Revisa el mensaje anterior.
-    echo.
-    pause
-    exit /b 1
+    echo [ERROR] El push ha fallado.
+    exit /b 9
 )
+
+REM ============================================================
+REM 12. COMPROBACION FINAL
+REM ============================================================
+
+echo.
+git status --short
 
 echo.
 echo ============================================
 echo   SUBIDA CORRECTA
 echo ============================================
 echo.
-echo Los archivos LFS permanecen como archivos
-echo reales en tu carpeta de trabajo.
-echo.
-echo GitHub almacena internamente sus punteros LFS.
-echo.
-pause
+
+exit /b 0

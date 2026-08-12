@@ -296,7 +296,7 @@ const DAY_THUMBNAILS: { [key: number]: { src: string; caption: string } } = {
     },
     3: {
         src: "https://images.unsplash.com/photo-1549887534-1541e9326642?q=80&w=800&auto=format&fit=crop",
-        caption: "Detalles modernistas de la Casa Vicens y Fachada de la Casa Amatller"
+        caption: "El modernismo en la Casa Amatller y la Casa Vicens"
     },
     4: {
         src: "https://images.unsplash.com/photo-1511527661048-7fe73d85e9a4?q=80&w=800&auto=format&fit=crop",

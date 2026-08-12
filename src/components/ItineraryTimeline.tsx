@@ -304,7 +304,7 @@ const DAY_THUMBNAILS: { [key: number]: { src: string; caption: string } } = {
     },
     5: {
         src: "https://images.unsplash.com/photo-1612222869069-a1716b5a267d?q=80&w=800&auto=format&fit=crop",
-        caption: "Museu de la Música de Barcelona, Spain"
+        caption: "Museo de la Música de Barcelona y Casa Batlló"
     },
     6: {
         src: "https://images.unsplash.com/photo-1587334206574-35113a8d75e9?q=80&w=800&auto=format&fit=crop",

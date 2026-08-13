@@ -308,7 +308,7 @@ const DAY_THUMBNAILS: { [key: number]: { src: string; caption: string } } = {
     },
     6: {
         src: "https://images.unsplash.com/photo-1587334206574-35113a8d75e9?q=80&w=800&auto=format&fit=crop",
-        caption: "Calles del Born e historia de Pablo Picasso en Barcelona"
+        caption: "La Barcelona de Pablo Picasso. Regreso a Madrid"
     }
 };
 

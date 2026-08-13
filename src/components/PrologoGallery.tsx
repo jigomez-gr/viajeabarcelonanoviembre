@@ -14,7 +14,7 @@ interface PrologueItem {
 const PROLOGUE_ITEMS: PrologueItem[] = [
     {
         src: "/imagenes/prologo/monumentoacolon0_cieloazul.jpg",
-        title: "Prolegómenos",
+        title: "Introducción",
         category: "LA BARCELONA MODERNISTA"
     },
     {

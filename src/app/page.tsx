@@ -270,10 +270,7 @@ export default async function Home() {
                 </div>
                 <div className="mt-4 text-center space-y-1 select-none border-t border-[#C5A059]/10 pt-4">
                   <p className="font-serif italic font-bold text-[#800020] text-sm sm:text-base">
-                    "Prolegómenos La Barcelona Modernista"
-                  </p>
-                  <p className="tracking-widest uppercase text-[9px] sm:text-[10px] text-stone-500 font-semibold">
-                    Prolegómenos La Barcelona Modernista
+                    "La Barcelona Modernista - Introducción"
                   </p>
                 </div>
               </div>
